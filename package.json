@@ -1,6 +1,12 @@
 {
   "name": "react-resume-kit",
   "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Andoni Gallardo",
+    "email": "kiyameh@gmail.com",
+    "url": "https://www.github.com/kiyameh"
+  },
   "type": "module",
   "keywords": [
     "react",
@@ -8,6 +14,18 @@
     "cv",
     "curriculum"
   ],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    },
+    "./style.css": "./dist/index.css"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -22,6 +40,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
+    "@types/node": "^22.14.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react-swc": "^3.8.0",

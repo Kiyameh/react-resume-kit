@@ -3,7 +3,7 @@
 <br/>
 <br/>
 <div align="center">
-  <img src="public/logo.png" alt="React Resume Kit Logo" width="300"/>
+  <img src="logo.png" alt="React Resume Kit Logo" width="300"/>
 </div>
 <br/>
 <br/>
@@ -45,14 +45,16 @@ function App() {
 
 STEP1: Add the ResumeLayout componente by wrapping one or more of the following:
 
-- <ResumeHeader/>
-- <ResumeAbout/>
-- <ResumeWorks/>
-- <ResumeCourses/>
-- <ResumeTechnologies/>
-- <ResumeSoftSkills/>
-- <ResumeProjects/>
-- <ResumeContact/>
+```tsx
+ <ResumeHeader/>
+ <ResumeAbout/>
+ <ResumeWorks/>
+ <ResumeCourses/>
+ <ResumeTechnologies/>
+ <ResumeSoftSkills/>
+ <ResumeProjects/>
+ <ResumeContact/>
+```
 
 STEP2: You can add the following props to ResumeLayout component:
 
