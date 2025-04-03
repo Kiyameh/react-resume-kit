@@ -1,9 +1,13 @@
 # React Resume Kit
 
-<div align="center" style="border-radius: 10px; margin: 20px 0;">
+<br/>
+<br/>
+<div align="center">
   <img src="public/logo.png" alt="React Resume Kit Logo" width="300"/>
 </div>
- 
+<br/>
+<br/>
+
 A modern, customizable React component for creating beautiful and professional resumes or curriculum for your website. Built with TypeScript and styled with CSS modules.
 
 ## Features
@@ -30,7 +34,7 @@ import {content} from './your-content-file'
 
 function App() {
   return(
-    <ResumeLayout content={content}>
+    <ResumeLayout resumeContent={content}>
       <ResumeHeader>
     </ResumeLayout>
   )
@@ -39,84 +43,105 @@ function App() {
 
 ## Configuration
 
-The component accepts a `resumeContent` prop that contains all the resume data. The content should follow this structure:
+STEP1: Add the ResumeLayout componente by wrapping one or more of the following:
+
+- <ResumeHeader/>
+- <ResumeAbout/>
+- <ResumeWorks/>
+- <ResumeCourses/>
+- <ResumeTechnologies/>
+- <ResumeSoftSkills/>
+- <ResumeProjects/>
+- <ResumeContact/>
+
+STEP2: You can add the following props to ResumeLayout component:
+
+- initialLanguage="es"
+- resumeContent={content}
+- enableLanguageSwitch
+- enablePdfDownload
+
+STEP3: Copy the data/exampleContent file that contains all the resume data. Update it. The content should follow this structure:
 
 ```typescript
 type ResumeContent = {
-  // Section names
-  about_title: string
-  works_title: string
-  courses_title: string
-  techs_title: string
-  soft_skills_title: string
-  soft_skills_subtitle: string
-  projects_title: string
-  projects_subtitle: string
-  connect_title: string
+  // One for each language
+  en: {
+    // Section names
+    about_title: string
+    works_title: string
+    courses_title: string
+    techs_title: string
+    soft_skills_title: string
+    soft_skills_subtitle: string
+    projects_title: string
+    projects_subtitle: string
+    connect_title: string
 
-  // Download button text
-  download_pdf: string
+    // Download button text
+    download_pdf: string
 
-  // Language switcher
-  switcher_text: string
-  language_labels: Array<{label: string; value: string}>
+    // Language switcher
+    switcher_text: string
+    language_labels: Array<{label: string; value: string}>
 
-  // Header
-  name: string
-  title: string
-  email: string
-  phone: string
-  location: string
-  picture?: string
-
-  // About
-  about_text: string
-
-  // Experience
-  works: Array<{
+    // Header
+    name: string
     title: string
-    company: string
-    date: string
+    email: string
+    phone: string
     location: string
-    points: string[]
-  }>
+    picture?: string
 
-  // Courses
-  courses: Array<{
-    degree: string
-    school: string
-    date: string
-  }>
+    // About
+    about_text: string
 
-  // Technologies
-  technologies: Array<{
-    name: string
-    icon: SimpleIconName
-  }>
+    // Experience
+    works: Array<{
+      title: string
+      company: string
+      date: string
+      location: string
+      points: string[]
+    }>
 
-  // Soft Skills
-  soft_skills: Array<{
-    title: string
-    description: string
-    icon: LucideIconName
-  }>
+    // Courses
+    courses: Array<{
+      degree: string
+      school: string
+      date: string
+    }>
 
-  // Projects
-  projects: Array<{
-    title: string
-    description: string
-    features: string
-    technologies: string[]
-    link?: string
-  }>
+    // Technologies
+    technologies: Array<{
+      name: string
+      icon: SimpleIconName
+    }>
 
-  // Footer
-  author: string
-  socialLinks: Array<{
-    name: string
-    icon: LucideIconName | SimpleIconName
-    url: string
-  }>
+    // Soft Skills
+    soft_skills: Array<{
+      title: string
+      description: string
+      icon: LucideIconName
+    }>
+
+    // Projects
+    projects: Array<{
+      title: string
+      description: string
+      features: string
+      technologies: string[]
+      link?: string
+    }>
+
+    // Footer
+    author: string
+    socialLinks: Array<{
+      name: string
+      icon: LucideIconName | SimpleIconName
+      url: string
+    }>
+  }
 }
 ```
 
@@ -125,7 +150,7 @@ type ResumeContent = {
 The component supports both Lucide Icons and Simple Icons. To use them:
 
 - For Lucide Icons: Use the icon name directly. Can see them in https://lucide.dev/
-- For Simple Icons: Use the 'Si' prefix followed by the icon name (e.g., 'SiReact'). Can see them in https://simpleicons.org/?q=in
+- For Simple Icons: Use the 'Si' prefix followed by the icon name (e.g., 'SiReact'). Can see them in https://simpleicons.org
 
 ## Language Support
 

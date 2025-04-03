@@ -1,8 +1,6 @@
-import type {ResumeContent} from '../types/types'
+import type {Language, ResumeContent} from '../types/types'
 
 export const suportedLanguages = ['en', 'es'] as const
-
-export type Language = (typeof suportedLanguages)[number]
 
 export const content: Record<Language, ResumeContent> = {
   en: {
