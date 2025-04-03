@@ -3,7 +3,7 @@
 <br/>
 <br/>
 <div align="center">
-  <img src="logo.png" alt="React Resume Kit Logo" width="300"/>
+  <img src="dist/logo.png" alt="React Resume Kit Logo" width="300"/>
 </div>
 <br/>
 <br/>
