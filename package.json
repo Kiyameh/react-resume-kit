@@ -1,6 +1,6 @@
 {
   "name": "react-resume-kit",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "license": "MIT",
   "author": {
     "name": "Andoni Gallardo",
@@ -25,6 +25,10 @@
       "require": "./dist/index.umd.cjs"
     },
     "./style.css": "./dist/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kiyameh/react-resume-kit"
   },
   "scripts": {
     "dev": "vite",
