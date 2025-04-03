@@ -1,18 +1,18 @@
-.socialButtons {
+.resume-contact-socialButtons {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
 @media print {
-  .socialButtons {
+  .resume-contact-socialButtons {
     flex-direction: column;
     gap: 0.25rem;
     font-size: 0.75rem;
   }
 }
 
-.button {
+.resume-contact-button {
   height: 2.5rem;
   width: 2.5rem;
   color: #0284c7;
@@ -27,34 +27,34 @@
   cursor: pointer;
 }
 
-.button:hover {
+.resume-contact-button:hover {
   background-color: #dff3fd;
 }
 
 @media print {
-  .button {
+  .resume-contact-button {
     display: none;
   }
 }
 
-.bigIcon {
+.resume-contact-bigIcon {
   height: 1.25rem;
   width: 1.25rem;
 }
 
-.url {
+.resume-contact-url {
   display: none;
 }
 
 @media print {
-  .url {
+  .resume-contact-url {
     display: flex;
     align-items: center;
     color: #0284c7;
   }
 }
 
-.icon {
+.resume-contact-icon {
   margin-right: 0.25rem;
   margin-left: 0.25rem;
   height: 1rem;
@@ -62,7 +62,7 @@
   color: #0284c7;
 }
 
-.atribution {
+.resume-contact-atribution {
   font-size: 0.875rem;
   display: flex;
   align-items: center;
@@ -70,17 +70,19 @@
 }
 
 @media print {
-  .atribution {
+  .resume-contact-atribution {
     padding-top: 0.25rem;
     font-size: 0.75rem;
   }
 }
-.atribution a {
+
+.resume-contact-atribution a {
   display: flex;
   align-items: center;
 }
+
 @media print {
-  .github {
+  .resume-contact-github {
     display: none;
   }
 }

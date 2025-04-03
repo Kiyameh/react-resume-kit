@@ -1,5 +1,6 @@
 import {Download} from 'lucide-react'
-import styles from './PdfDownloadButton.module.css'
+import './PdfDownloadButton.css'
+
 export default function PdfDownloadButton() {
   const handlePrint = () => {
     window.print()
@@ -7,9 +8,9 @@ export default function PdfDownloadButton() {
   return (
     <button
       onClick={handlePrint}
-      className={styles.button}
+      className="pdf-download-button"
     >
-      <Download className={styles.icon} />
+      <Download className="pdf-download-icon" />
       Descargar Pdf
     </button>
   )

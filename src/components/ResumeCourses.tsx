@@ -1,6 +1,6 @@
 import {useLanguage} from '../context/language-context'
-import styles from './ResumeCourses.module.css'
-import component from './Common.module.css'
+import './ResumeCourses.css'
+import './Common.css'
 
 export default function ResumeCourses() {
   const {content} = useLanguage()
@@ -12,13 +12,13 @@ export default function ResumeCourses() {
         return (
           <div
             key={index}
-            className={styles.course}
+            className="resume-courses-course"
           >
             <div>
-              <h3 className={styles.degree}>{course.degree}</h3>
-              <p className={styles.school}>{course.school}</p>
+              <h3 className="resume-courses-degree">{course.degree}</h3>
+              <p className="resume-courses-school">{course.school}</p>
             </div>
-            <p className={component.dateChip}>{course.date}</p>
+            <p className="dateChip">{course.date}</p>
           </div>
         )
       })}

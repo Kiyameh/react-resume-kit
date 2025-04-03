@@ -1,6 +1,6 @@
 import {InfoIcon} from 'lucide-react'
 import {useLanguage} from '../context/language-context'
-import styles from './ResumeAbout.module.css'
+import './ResumeAbout.css'
 
 export default function ResumeAbout() {
   const {content} = useLanguage()
@@ -8,9 +8,9 @@ export default function ResumeAbout() {
   return (
     <section>
       <h2>{content.about_title}</h2>
-      <div className={styles.card}>
-        <InfoIcon className={styles.icon} />
-        <p className={styles.text}>{content.about_text}</p>
+      <div className="resume-about-card">
+        <InfoIcon className="resume-about-icon" />
+        <p className="resume-about-text">{content.about_text}</p>
       </div>
     </section>
   )

@@ -1,7 +1,7 @@
 import React from 'react'
 import LanguageSwitcher from './ui/LanguageSwitcher'
 import PdfDownloadButton from './ui/PdfDownloadButton'
-import styles from './ResumeLayout.module.css'
+import './ResumeLayout.css'
 import {LanguageContext} from '../context/language-context'
 import {Language, ResumeContent} from '../types/types'
 
@@ -26,7 +26,7 @@ export default function ResumeLayout({
     <LanguageContext.Provider
       value={{language, setLanguage, content: resumeContent[language]}}
     >
-      <main className={styles.resume}>
+      <main className="resume">
         {children}
         {enablePdfDownload && <PdfDownloadButton />}
         {enableLanguageSwitch && <LanguageSwitcher />}

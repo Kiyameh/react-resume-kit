@@ -1,6 +1,6 @@
 import {SVGProps} from 'react'
 import {useLanguage} from '../context/language-context'
-import styles from './ResumeTechnologies.module.css'
+import './ResumeTechnologies.css'
 import * as SimpleIcons from '@icons-pack/react-simple-icons'
 import {SimpleIconName} from '../types/types'
 
@@ -9,7 +9,7 @@ export default function ResumeTechnologies() {
   return (
     <section>
       <h2>{content.techs_title}</h2>
-      <div className={styles.techContainer}>
+      <div className="resume-technologies-container">
         {content.technologies.map((tech, index) => {
           const IconComponent = SimpleIcons[
             tech.icon as SimpleIconName
@@ -17,10 +17,10 @@ export default function ResumeTechnologies() {
           return (
             <div
               key={index}
-              className={styles.techChip}
+              className="resume-technologies-chip"
             >
-              <IconComponent className={styles.icon} />
-              <span className={styles.text}>{tech.name}</span>
+              <IconComponent className="resume-technologies-icon" />
+              <span className="resume-technologies-text">{tech.name}</span>
             </div>
           )
         })}

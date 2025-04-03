@@ -1,5 +1,5 @@
 import {SVGProps} from 'react'
-import styles from './ResumeContact.module.css'
+import './ResumeContact.css'
 import {useLanguage} from '../context/language-context'
 import * as SimpleIcons from '@icons-pack/react-simple-icons'
 import * as LucideIcons from 'lucide-react'
@@ -15,7 +15,7 @@ export default function ResumeContact() {
   return (
     <section>
       <h2>{content.connect_title}</h2>
-      <div className={styles.socialButtons}>
+      <div className="resume-contact-socialButtons">
         {content.social_links.map((link, index) => {
           const IconComponent = icons[
             link.icon as IconName
@@ -28,18 +28,18 @@ export default function ResumeContact() {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <div className={styles.button}>
-                <IconComponent className={styles.bigIcon} />
+              <div className="resume-contact-button">
+                <IconComponent className="resume-contact-bigIcon" />
               </div>
-              <div className={styles.url}>
-                <IconComponent className={styles.icon} />
+              <div className="resume-contact-url">
+                <IconComponent className="resume-contact-icon" />
                 <span>{link.url}</span>
               </div>
             </a>
           )
         })}
       </div>
-      <p className={styles.atribution}>
+      <p className="resume-contact-atribution">
         <span>
           {new Date().getFullYear()} {content.author}
         </span>
@@ -49,17 +49,17 @@ export default function ResumeContact() {
           rel="noreferrer noopener"
         >
           MIT License
-          <SimpleIcons.SiOpensourceinitiative className={styles.icon} />
+          <SimpleIcons.SiOpensourceinitiative className="resume-contact-icon" />
         </a>
       </p>
-      <p className={styles.atribution}>
+      <p className="resume-contact-atribution">
         <span>This resume was built with React.</span>
         <a
-          className={styles.github}
+          className="resume-contact-github"
           href="https://github.com/Kiyameh/react-resume-kit"
         >
           <span> You can fork it here</span>
-          <LucideIcons.GitFork className={styles.icon} />
+          <LucideIcons.GitFork className="resume-contact-icon" />
         </a>
       </p>
     </section>

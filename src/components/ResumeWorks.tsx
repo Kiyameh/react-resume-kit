@@ -1,6 +1,6 @@
 import {useLanguage} from '../context/language-context'
-import styles from './ResumeWorks.module.css'
-import component from './Common.module.css'
+import './ResumeWorks.css'
+import './Common.css'
 
 export default function ResumeWorks() {
   const {content} = useLanguage()
@@ -13,20 +13,20 @@ export default function ResumeWorks() {
           return (
             <div
               key={index}
-              className={styles.work}
+              className="resume-works-work"
             >
-              <div className={styles.workHeader}>
-                <div className={styles.leftHeader}>
-                  <h3 className={styles.title}>{work.title}</h3>
-                  <p className={styles.company}>{work.company}</p>
+              <div className="resume-works-workHeader">
+                <div className="resume-works-leftHeader">
+                  <h3 className="resume-works-title">{work.title}</h3>
+                  <p className="resume-works-company">{work.company}</p>
                 </div>
-                <div className={styles.rightHeader}>
-                  <p className={component.dateChip}>{work.date}</p>
-                  <p className={styles.location}>{work.location}</p>
+                <div className="resume-works-rightHeader">
+                  <p className="dateChip">{work.date}</p>
+                  <p className="resume-works-location">{work.location}</p>
                 </div>
               </div>
 
-              <ul className={styles.points}>
+              <ul className="resume-works-points">
                 {work.points.map((point, index) => {
                   return <li key={index}>{point}</li>
                 })}

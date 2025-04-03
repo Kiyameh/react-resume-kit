@@ -1,4 +1,4 @@
-.header {
+.resume-header-header {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -6,7 +6,7 @@
   padding-bottom: 1.5rem;
 }
 
-.profile {
+.resume-header-profile {
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
   gap: 1rem;
 }
 
-.picture {
+.resume-header-picture {
   width: 8rem;
   height: 8rem;
   overflow: hidden;
@@ -24,30 +24,30 @@
 }
 
 @media print {
-  .header {
+  .resume-header-header {
     padding-bottom: 0.75rem;
     margin-top: 0;
     margin-bottom: 0;
     text-align: left;
   }
-  .profile {
+  .resume-header-profile {
     flex-direction: row;
     align-items: center;
     justify-content: start;
   }
-  .picture {
+  .resume-header-picture {
     width: 6rem;
     height: 6rem;
   }
 }
 
-.image {
+.resume-header-image {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.name {
+.resume-header-name {
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 700;
@@ -55,13 +55,13 @@
   color: #082f49;
 }
 
-.title {
+.resume-header-title {
   font-size: 1.25rem;
   line-height: 1.75rem;
   color: #6b7280;
 }
 
-.contact {
+.resume-header-contact {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -72,7 +72,7 @@
 }
 
 @media print {
-  .contact {
+  .resume-header-contact {
     justify-content: flex-start;
     font-size: 0.75rem;
     line-height: 1rem;
@@ -80,19 +80,19 @@
   }
 }
 
-.contactItem {
+.resume-header-contactItem {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.icon {
+.resume-header-icon {
   height: 1rem;
   width: 1rem;
 }
 
 @media print {
-  .icon {
+  .resume-header-icon {
     height: 0.75rem;
     width: 0.75rem;
   }

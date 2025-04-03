@@ -1,6 +1,6 @@
 import {SVGProps} from 'react'
 import {useLanguage} from '../context/language-context'
-import styles from './ResumeSoftSkills.module.css'
+import './ResumeSoftSkills.css'
 import * as LucideIcons from 'lucide-react'
 import {LucideIconName} from '../types/types'
 
@@ -10,9 +10,11 @@ export default function ResumeSoftSkills() {
   return (
     <section>
       <h2>{content.soft_skills_title}</h2>
-      <h3 className={styles.subtitle}>{content.soft_skills_subtitle}</h3>
+      <h3 className="resume-soft-skills-subtitle">
+        {content.soft_skills_subtitle}
+      </h3>
 
-      <div className={styles.container}>
+      <div className="resume-soft-skills-container">
         {content.soft_skills.map((skill, index) => {
           const IconComponent = LucideIcons[
             skill.icon as LucideIconName
@@ -21,12 +23,14 @@ export default function ResumeSoftSkills() {
           return (
             <div
               key={index}
-              className={styles.skill}
+              className="resume-soft-skills-skill"
             >
-              <IconComponent className={styles.icon} />
+              <IconComponent className="resume-soft-skills-icon" />
               <div>
-                <p className={styles.skillTitle}>{skill.title}</p>
-                <p className={styles.skillDescription}>{skill.description}</p>
+                <p className="resume-soft-skills-skillTitle">{skill.title}</p>
+                <p className="resume-soft-skills-skillDescription">
+                  {skill.description}
+                </p>
               </div>
             </div>
           )

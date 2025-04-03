@@ -1,4 +1,4 @@
-import styles from './App.module.css'
+import './App.css'
 import ResumeAbout from './components/ResumeAbout'
 import ResumeContact from './components/ResumeContact'
 import ResumeCourses from './components/ResumeCourses'
@@ -13,7 +13,7 @@ import {content} from './data/exampleContent'
 function App() {
   return (
     <div>
-      <div className={styles.frame}>
+      <div className="frame">
         <ResumeLayout
           initialLanguage="es"
           resumeContent={content}
@@ -30,7 +30,7 @@ function App() {
           <ResumeContact />
         </ResumeLayout>
       </div>
-      <div className={styles.background} />
+      <div className="background" />
     </div>
   )
 }

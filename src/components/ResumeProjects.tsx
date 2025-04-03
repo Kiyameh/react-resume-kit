@@ -1,6 +1,6 @@
 import {ExternalLink} from 'lucide-react'
 import {useLanguage} from '../context/language-context'
-import styles from './ResumeProjects.module.css'
+import './ResumeProjects.css'
 
 export default function ResumeProjects() {
   const {content} = useLanguage()
@@ -12,33 +12,33 @@ export default function ResumeProjects() {
         {content.projects.map((project, index) => (
           <div
             key={index}
-            className={styles.project}
+            className="resume-projects-project"
           >
-            <div className={styles.header}>
-              <h3 className={styles.title}>{project.title}</h3>
+            <div className="resume-projects-header">
+              <h3 className="resume-projects-title">{project.title}</h3>
               {project.link && (
                 <a
                   href={`//${project.link}`}
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  <ExternalLink className={styles.icon} />
+                  <ExternalLink className="resume-projects-icon" />
                 </a>
               )}
             </div>
-            <div className={styles.technologies}>
+            <div className="resume-projects-technologies">
               {project.technologies?.map((technology, index) => (
                 <span
-                  className={styles.chip}
+                  className="resume-projects-chip"
                   key={index}
                 >
                   {technology}
                 </span>
               ))}
             </div>
-            <div className={styles.description}>
+            <div className="resume-projects-description">
               <p>{project.description}</p>
-              <p className={styles.features}>
+              <p className="resume-projects-features">
                 <span>{`${content.projects_subtitle}: `}</span>
                 {project.features}
               </p>
