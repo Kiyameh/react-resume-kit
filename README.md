@@ -1,14 +1,14 @@
 # React Resume Kit
 
-<div align="center">
-  <img src="public/logo.png" alt="React Resume Kit Logo" width="200"/>
+<div align="center" style="border-radius: 10px; margin: 20px 0;">
+  <img src="public/logo.png" alt="React Resume Kit Logo" width="300"/>
 </div>
-
+ 
 A modern, customizable React component for creating beautiful and professional resumes or curriculum for your website. Built with TypeScript and styled with CSS modules.
 
 ## Features
 
-- 🌐 Multi-language support (English and Spanish included)
+- 🌐 Multi-language support
 - 📄 PDF download functionality
 - 🎨 Customizable themes
 - 🎯 Icon support (Lucide Icons and Simple Icons)
@@ -25,17 +25,21 @@ npm install react-resume-kit
 ## Quick Start
 
 ```tsx
-import {Resume} from 'react-resume-kit'
+import {ResumeLayout, ResumeHeader} from 'react-resume-kit'
 import {content} from './your-content-file'
 
 function App() {
-  return <Resume content={content} />
+  return(
+    <ResumeLayout content={content}>
+      <ResumeHeader>
+    </ResumeLayout>
+  )
 }
 ```
 
 ## Configuration
 
-The component accepts a `content` prop that contains all the resume data. The content should follow this structure:
+The component accepts a `resumeContent` prop that contains all the resume data. The content should follow this structure:
 
 ```typescript
 type ResumeContent = {
@@ -87,14 +91,14 @@ type ResumeContent = {
   // Technologies
   technologies: Array<{
     name: string
-    icon: string
+    icon: SimpleIconName
   }>
 
   // Soft Skills
   soft_skills: Array<{
     title: string
     description: string
-    icon: string
+    icon: LucideIconName
   }>
 
   // Projects
@@ -108,9 +112,11 @@ type ResumeContent = {
 
   // Footer
   author: string
-  github_link?: string
-  linkeding_link?: string
-  twitter_link?: string
+  socialLinks: Array<{
+    name: string
+    icon: LucideIconName | SimpleIconName
+    url: string
+  }>
 }
 ```
 
@@ -118,8 +124,8 @@ type ResumeContent = {
 
 The component supports both Lucide Icons and Simple Icons. To use them:
 
-- For Lucide Icons: Use the icon name directly (e.g., 'MessageSquare', 'BookOpen')
-- For Simple Icons: Use the 'Si' prefix followed by the icon name (e.g., 'SiReact', 'SiTypescript')
+- For Lucide Icons: Use the icon name directly. Can see them in https://lucide.dev/
+- For Simple Icons: Use the 'Si' prefix followed by the icon name (e.g., 'SiReact'). Can see them in https://simpleicons.org/?q=in
 
 ## Language Support
 
