@@ -1,0 +1,149 @@
+# React Resume Kit
+
+<div align="center">
+  <img src="public/logo.png" alt="React Resume Kit Logo" width="200"/>
+</div>
+
+A modern, customizable React component for creating beautiful and professional resumes or curriculum for your website. Built with TypeScript and styled with CSS modules.
+
+## Features
+
+- 🌐 Multi-language support (English and Spanish included)
+- 📄 PDF download functionality
+- 🎨 Customizable themes
+- 🎯 Icon support (Lucide Icons and Simple Icons)
+- ⚡ Easy to configure and integrate
+- 📱 Responsive design
+- 🎨 Modern and clean UI
+
+## Installation
+
+```bash
+npm install react-resume-kit
+```
+
+## Quick Start
+
+```tsx
+import {Resume} from 'react-resume-kit'
+import {content} from './your-content-file'
+
+function App() {
+  return <Resume content={content} />
+}
+```
+
+## Configuration
+
+The component accepts a `content` prop that contains all the resume data. The content should follow this structure:
+
+```typescript
+type ResumeContent = {
+  // Section names
+  about_title: string
+  works_title: string
+  courses_title: string
+  techs_title: string
+  soft_skills_title: string
+  soft_skills_subtitle: string
+  projects_title: string
+  projects_subtitle: string
+  connect_title: string
+
+  // Download button text
+  download_pdf: string
+
+  // Language switcher
+  switcher_text: string
+  language_labels: Array<{label: string; value: string}>
+
+  // Header
+  name: string
+  title: string
+  email: string
+  phone: string
+  location: string
+  picture?: string
+
+  // About
+  about_text: string
+
+  // Experience
+  works: Array<{
+    title: string
+    company: string
+    date: string
+    location: string
+    points: string[]
+  }>
+
+  // Courses
+  courses: Array<{
+    degree: string
+    school: string
+    date: string
+  }>
+
+  // Technologies
+  technologies: Array<{
+    name: string
+    icon: string
+  }>
+
+  // Soft Skills
+  soft_skills: Array<{
+    title: string
+    description: string
+    icon: string
+  }>
+
+  // Projects
+  projects: Array<{
+    title: string
+    description: string
+    features: string
+    technologies: string[]
+    link?: string
+  }>
+
+  // Footer
+  author: string
+  github_link?: string
+  linkeding_link?: string
+  twitter_link?: string
+}
+```
+
+## Icons
+
+The component supports both Lucide Icons and Simple Icons. To use them:
+
+- For Lucide Icons: Use the icon name directly (e.g., 'MessageSquare', 'BookOpen')
+- For Simple Icons: Use the 'Si' prefix followed by the icon name (e.g., 'SiReact', 'SiTypescript')
+
+## Language Support
+
+The component supports multiple languages. You need to provide the content for each language in the content object:
+
+```typescript
+const content = {
+  en: {
+    /* English content */
+  },
+  es: {
+    /* Spanish content */
+  },
+}
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+MIT
+
+## Author
+
+Andoni Gallardo

@@ -1,0 +1,86 @@
+.socialButtons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media print {
+  .socialButtons {
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+  }
+}
+
+.button {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #0284c7;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid #99ddff;
+  transition: color 0.2s, background-color 0.2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #dff3fd;
+}
+
+@media print {
+  .button {
+    display: none;
+  }
+}
+
+.bigIcon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.url {
+  display: none;
+}
+
+@media print {
+  .url {
+    display: flex;
+    align-items: center;
+    color: #0284c7;
+  }
+}
+
+.icon {
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+  height: 1rem;
+  width: 1rem;
+  color: #0284c7;
+}
+
+.atribution {
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+@media print {
+  .atribution {
+    padding-top: 0.25rem;
+    font-size: 0.75rem;
+  }
+}
+.atribution a {
+  display: flex;
+  align-items: center;
+}
+@media print {
+  .github {
+    display: none;
+  }
+}

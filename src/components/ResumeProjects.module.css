@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.project {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: black;
+
+  @media print {
+    font-size: 1rem;
+  }
+}
+
+.icon {
+  height: 1rem;
+  width: 1rem;
+
+  @media print {
+    display: none;
+  }
+}
+
+.icon:hover {
+  color: #0284c7;
+}
+
+.technologies {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  @media print {
+    gap: 0.125rem;
+  }
+}
+
+.chip {
+  border: transparent;
+  background-color: rgb(240, 249, 255);
+  color: rgb(3, 105, 161);
+  display: inline-flex;
+  align-items: center;
+  border-radius: 5rem;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.75rem;
+  transition: background-color 0.2s;
+  min-width: fit-content;
+  font-weight: 400;
+}
+
+.chip:hover {
+  background-color: rgb(224, 242, 254);
+}
+
+@media print {
+  .chip {
+    font-size: 0.75rem;
+    padding: 0;
+  }
+}
+
+@media print {
+  .description {
+    font-size: 0.75rem;
+  }
+}
+.features {
+  margin-top: 0.75rem;
+}
+
+.features span {
+  font-weight: 600;
+  color: #0284c7;
+}

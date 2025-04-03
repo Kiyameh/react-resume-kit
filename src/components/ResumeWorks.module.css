@@ -1,0 +1,66 @@
+.work {
+  margin-bottom: 1.5rem;
+}
+.workHeader {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+.leftHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightHeader {
+  display: flex;
+  text-align: right;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .workHeader {
+    flex-direction: row;
+  }
+  .rightHeader {
+    flex-direction: column;
+  }
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: black;
+}
+.location {
+  font-size: 0.85rem;
+}
+
+@media print {
+  .title {
+    font-size: 1rem;
+  }
+  .company {
+    font-size: 0.75rem;
+  }
+  .location {
+    font-size: 0.75rem;
+  }
+}
+
+.points {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+@media print {
+  .points {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.75rem;
+  }
+}

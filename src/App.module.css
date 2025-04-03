@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.frame {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.background {
+  background-image: linear-gradient(
+    to right top,
+    #e6eefa,
+    #b0e2ff,
+    #4cf0ff,
+    #e4baff4b,
+    #f5d3ff
+  );
+  height: 100svh;
+  width: 100svw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

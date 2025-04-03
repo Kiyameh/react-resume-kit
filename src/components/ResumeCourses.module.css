@@ -1,0 +1,28 @@
+.course {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .course {
+    flex-direction: row;
+  }
+}
+
+.degree {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: black;
+}
+
+@media print {
+  .degree {
+    font-size: 1rem;
+  }
+  .school {
+    font-size: 0.75rem;
+  }
+}
