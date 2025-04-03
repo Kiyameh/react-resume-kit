@@ -2,8 +2,7 @@ import {SVGProps} from 'react'
 import {useLanguage} from '../context/language-context'
 import styles from './ResumeSoftSkills.module.css'
 import * as LucideIcons from 'lucide-react'
-
-export type LucideIconName = keyof typeof LucideIcons
+import {LucideIconName} from '../types/types'
 
 export default function ResumeSoftSkills() {
   const {content} = useLanguage()

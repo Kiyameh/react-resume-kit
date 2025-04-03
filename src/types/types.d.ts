@@ -1,15 +1,19 @@
-import type {SimpleIconName} from '../ui/simple-icon'
-import type {LucideIconName} from '../ui/lucide-icon'
-import {suportedLanguages} from '../data/content'
+import {suportedLanguages} from '../data/exampleContent'
+import * as LucideIcons from 'lucide-react'
+import * as SimpleIcons from '@icons-pack/react-simple-icons'
+
+export type LucideIconName = keyof typeof LucideIcons
+export type SimpleIconName = keyof typeof SimpleIcons
+export type IconName = SimpleIconName | LucideIconName
 
 export type Language = (typeof suportedLanguages)[number]
 
-export type LanguageLabel = {
+type LanguageLabel = {
   value: Language
   label: string
 }
 
-export interface WorkItem {
+interface WorkItem {
   title: string
   company: string
   date: string
@@ -17,13 +21,13 @@ export interface WorkItem {
   points: string[]
 }
 
-export interface CourseItem {
+interface CourseItem {
   degree: string
   school: string
   date: string
 }
 
-export interface ProjectItem {
+interface ProjectItem {
   title: string
   description: string
   technologies?: string[]
@@ -31,18 +35,18 @@ export interface ProjectItem {
   link?: string
 }
 
-export interface SoftSkillItem {
+interface SoftSkillItem {
   title: string
   description: string
   icon: LucideIconName
 }
 
-export interface TechItem {
+interface TechItem {
   name: string
   icon: SimpleIconName
 }
 
-export interface SocialLink {
+interface SocialLink {
   name: string
   icon: IconName
   url: string
@@ -97,3 +101,5 @@ export interface ResumeContent {
   author?: string
   social_links: SocialLink[]
 }
+
+export type Content = Record<Language, ResumeContent>

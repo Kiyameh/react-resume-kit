@@ -2,8 +2,7 @@ import {SVGProps} from 'react'
 import {useLanguage} from '../context/language-context'
 import styles from './ResumeTechnologies.module.css'
 import * as SimpleIcons from '@icons-pack/react-simple-icons'
-
-type SympleIconName = keyof typeof SimpleIcons
+import {SimpleIconName} from '../types/types'
 
 export default function ResumeTechnologies() {
   const {content} = useLanguage()
@@ -13,7 +12,7 @@ export default function ResumeTechnologies() {
       <div className={styles.techContainer}>
         {content.technologies.map((tech, index) => {
           const IconComponent = SimpleIcons[
-            tech.icon as SympleIconName
+            tech.icon as SimpleIconName
           ] as React.ComponentType<SVGProps<SVGSVGElement>>
           return (
             <div

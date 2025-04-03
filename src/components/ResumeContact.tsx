@@ -1,18 +1,14 @@
+import {SVGProps} from 'react'
 import styles from './ResumeContact.module.css'
 import {useLanguage} from '../context/language-context'
 import * as SimpleIcons from '@icons-pack/react-simple-icons'
 import * as LucideIcons from 'lucide-react'
+import {IconName} from '../types/types'
 
 const icons = {
   ...SimpleIcons,
   ...LucideIcons,
 }
-
-import {SVGProps} from 'react'
-
-type SympleIconName = keyof typeof SimpleIcons
-type LucideIconName = keyof typeof LucideIcons
-export type IconName = SympleIconName | LucideIconName
 
 export default function ResumeContact() {
   const {content} = useLanguage()

@@ -1,8 +1,8 @@
-import type {Language, ResumeContent} from '../types/types'
+import {Content} from '../types/types'
 
 export const suportedLanguages = ['en', 'es'] as const
 
-export const content: Record<Language, ResumeContent> = {
+export const content: Content = {
   en: {
     // Section names:
     about_title: 'About Me',
@@ -175,7 +175,7 @@ export const content: Record<Language, ResumeContent> = {
     // Language switcher text
     switcher_text: 'Idioma',
     language_labels: [
-      {label: 'Íngles', value: 'en'},
+      {label: 'Inglés', value: 'en'},
       {label: 'Español', value: 'es'},
     ],
     // Header
