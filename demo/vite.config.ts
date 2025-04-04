@@ -7,7 +7,14 @@ export default defineConfig({
   base: '/react-resume-kit/',
   build: {
     rollupOptions: {
-      external: ['react', 'react/jsx-runtime', 'react-dom', 'react-dom/client'],
+      external: [
+        'react',
+        'react/jsx-runtime',
+        'react-dom',
+        'react-dom/client',
+        '@icons-pack/react-simple-icons',
+        'lucide-react',
+      ],
     },
   },
 })
