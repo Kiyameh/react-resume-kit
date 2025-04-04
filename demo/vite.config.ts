@@ -8,12 +8,12 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
-        'react',
-        'react/jsx-runtime',
-        'react-dom',
-        'react-dom/client',
-        '@icons-pack/react-simple-icons',
-        'lucide-react',
+        '/react',
+        '/react/jsx-runtime',
+        '/react-dom',
+        '/react-dom/client',
+        '/@icons-pack/react-simple-icons',
+        '/lucide-react',
       ],
     },
   },
