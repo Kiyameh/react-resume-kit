@@ -4,6 +4,7 @@ import typescript from '@rollup/plugin-typescript'
 import terser from '@rollup/plugin-terser'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import postcss from 'rollup-plugin-postcss'
+import {babel} from '@rollup/plugin-babel'
 
 export default {
   input: 'src/index.ts',
@@ -35,6 +36,10 @@ export default {
     resolve(),
     commonjs(),
     typescript(),
+    babel({
+      babelHelpers: 'bundled',
+      exclude: 'node_modules/**',
+    }),
     postcss({
       minimize: true,
     }),

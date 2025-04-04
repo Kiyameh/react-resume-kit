@@ -30,6 +30,7 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.3",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-terser": "^0.4.4",
@@ -43,9 +44,9 @@
     "typescript": "^5.8.2"
   },
   "peerDependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
     "@icons-pack/react-simple-icons": "^12.3.0",
-    "lucide-react": "^0.487.0"
+    "lucide-react": "^0.487.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }
