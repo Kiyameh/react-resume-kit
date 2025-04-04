@@ -8,10 +8,10 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
-        '/react',
-        '/react-dom',
-        '/@icons-pack/react-simple-icons',
-        '/lucide-react',
+        'react',
+        'react-dom',
+        '@icons-pack/react-simple-icons',
+        'lucide-react',
       ],
     },
   },
