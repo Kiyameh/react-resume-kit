@@ -1,0 +1,28 @@
+.resume-courses-course {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .resume-courses-course {
+    flex-direction: row;
+  }
+}
+
+.resume-courses-degree {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: black;
+}
+
+@media print {
+  .resume-courses-degree {
+    font-size: 1rem;
+  }
+  .resume-courses-school {
+    font-size: 0.75rem;
+  }
+}

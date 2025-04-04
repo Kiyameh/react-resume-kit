@@ -1,17 +1,16 @@
 {
-  "files": [],
-  "references": [
-    {"path": "./tsconfig.app.json"},
-    {"path": "./tsconfig.node.json"}
-  ],
   "compilerOptions": {
     "declaration": true,
-    "jsx": "react-jsx",
+    "outDir": "dist",
+    "declarationDir": "dist/types",
+    "target": "es5",
+    "module": "esnext",
+    "jsx": "react",
+    "sourceMap": true,
+    "strict": true,
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "module": "ESNext",
-    "target": "ESNext",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"]
-  }
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*", "package/**/*"],
+  "exclude": ["node_modules", "dist", "demo", "src/data"]
 }

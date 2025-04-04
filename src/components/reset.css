@@ -1,0 +1,80 @@
+/* Reset CSS para los componentes del Resume */
+.resume-layout-resume *,
+.resume-layout-resume *::before,
+.resume-layout-resume *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-layout-resume {
+  /* Reset de estilos base */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset de elementos específicos */
+.resume-layout-resume h1,
+.resume-layout-resume h2,
+.resume-layout-resume h3,
+.resume-layout-resume h4,
+.resume-layout-resume h5,
+.resume-layout-resume h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.resume-layout-resume img,
+.resume-layout-resume picture,
+.resume-layout-resume video,
+.resume-layout-resume canvas,
+.resume-layout-resume svg {
+  display: block;
+  max-width: 100%;
+}
+
+.resume-layout-resume input,
+.resume-layout-resume button,
+.resume-layout-resume textarea,
+.resume-layout-resume select {
+  font: inherit;
+}
+
+.resume-layout-resume p,
+.resume-layout-resume h1,
+.resume-layout-resume h2,
+.resume-layout-resume h3,
+.resume-layout-resume h4,
+.resume-layout-resume h5,
+.resume-layout-resume h6 {
+  overflow-wrap: break-word;
+}
+
+/* Reset de listas */
+.resume-layout-resume ul,
+.resume-layout-resume ol {
+  list-style: none;
+}
+
+/* Reset de enlaces */
+.resume-layout-resume a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset de botones */
+.resume-layout-resume button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Reset de tablas */
+.resume-layout-resume table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

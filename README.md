@@ -8,7 +8,7 @@
 <br/>
 <br/>
 
-A modern, customizable React component for creating beautiful and professional resumes or curriculum for your website. Built with TypeScript and styled with CSS modules.
+A modern, customizable React component for creating beautiful and professional resumes or curriculum for your website. Built with TypeScript.
 
 ## Features
 

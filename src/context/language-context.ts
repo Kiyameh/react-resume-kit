@@ -1,5 +1,5 @@
 import React from 'react'
-import {Language, ResumeContent} from '../types/types'
+import {Language, ResumeContent} from '../types'
 
 interface LanguageContextType {
   language: Language

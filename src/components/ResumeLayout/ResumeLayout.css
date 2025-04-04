@@ -1,0 +1,88 @@
+.resume {
+  /* Box */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  max-width: 56rem;
+  padding: 32px;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  /* Text */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: start;
+  font-size: 16px;
+  color: hsl(215.4 16.3% 46.9%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media print {
+  @page {
+    margin: 1cm;
+    size: A4 portrait;
+  }
+  .resume {
+    box-shadow: none;
+    padding: 16px;
+  }
+}
+
+/* RESET CSS */
+
+/* Text Styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #0284c7;
+}
+
+/* Buttons */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+/* Lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Sections an titles */
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+@media print {
+  h2 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+section {
+  margin-top: 0.75rem;
+  margin-bottom: 2.75rem;
+}
+
+@media print {
+  section {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+}

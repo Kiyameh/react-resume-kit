@@ -1,6 +1,4 @@
-import {Content} from '../types/types'
-
-export const suportedLanguages = ['en', 'es'] as const
+import {Content} from '../types'
 
 export const content: Content = {
   en: {

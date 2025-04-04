@@ -1,0 +1,68 @@
+.resume-works-work {
+  margin-bottom: 1.5rem;
+}
+
+.resume-works-workHeader {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+.resume-works-leftHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-works-rightHeader {
+  display: flex;
+  text-align: right;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .resume-works-workHeader {
+    flex-direction: row;
+  }
+  .resume-works-rightHeader {
+    flex-direction: column;
+  }
+}
+
+.resume-works-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: black;
+}
+
+.resume-works-location {
+  font-size: 0.85rem;
+}
+
+@media print {
+  .resume-works-title {
+    font-size: 1rem;
+  }
+  .resume-works-company {
+    font-size: 0.75rem;
+  }
+  .resume-works-location {
+    font-size: 0.75rem;
+  }
+}
+
+.resume-works-points {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+@media print {
+  .resume-works-points {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.75rem;
+  }
+}

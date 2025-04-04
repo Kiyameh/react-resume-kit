@@ -1,0 +1,88 @@
+.resume-contact-socialButtons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media print {
+  .resume-contact-socialButtons {
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+  }
+}
+
+.resume-contact-button {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #0284c7;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid #99ddff;
+  transition: color 0.2s, background-color 0.2s;
+  cursor: pointer;
+}
+
+.resume-contact-button:hover {
+  background-color: #dff3fd;
+}
+
+@media print {
+  .resume-contact-button {
+    display: none;
+  }
+}
+
+.resume-contact-bigIcon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.resume-contact-url {
+  display: none;
+}
+
+@media print {
+  .resume-contact-url {
+    display: flex;
+    align-items: center;
+    color: #0284c7;
+  }
+}
+
+.resume-contact-icon {
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+  height: 1rem;
+  width: 1rem;
+  color: #0284c7;
+}
+
+.resume-contact-atribution {
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+@media print {
+  .resume-contact-atribution {
+    padding-top: 0.25rem;
+    font-size: 0.75rem;
+  }
+}
+
+.resume-contact-atribution a {
+  display: flex;
+  align-items: center;
+}
+
+@media print {
+  .resume-contact-github {
+    display: none;
+  }
+}
