@@ -36,10 +36,7 @@ export default {
     commonjs(),
     typescript(),
     postcss({
-      modules: true,
       minimize: true,
-      extract: true,
-      autoModules: true,
     }),
     terser({
       compress: {
