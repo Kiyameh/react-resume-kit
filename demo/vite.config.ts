@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/react-simple-resume/',
   build: {
     rollupOptions: {
-      external: ['react'],
+      external: ['react', 'react/jsx-runtime', 'react-dom', 'react-dom/client'],
     },
   },
 })
