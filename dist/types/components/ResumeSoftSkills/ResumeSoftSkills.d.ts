@@ -1,3 +1,2 @@
-import React from 'react';
 import './ResumeSoftSkills.css';
-export default function ResumeSoftSkills(): React.JSX.Element;
+export default function ResumeSoftSkills(): import("react/jsx-runtime").JSX.Element;

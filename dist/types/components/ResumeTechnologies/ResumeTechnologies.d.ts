@@ -1,3 +1,2 @@
-import React from 'react';
 import './ResumeTechnologies.css';
-export default function ResumeTechnologies(): React.JSX.Element;
+export default function ResumeTechnologies(): import("react/jsx-runtime").JSX.Element;

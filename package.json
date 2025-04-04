@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "publish": "npm version patch && npm publish"
+    "version": "npm version patch"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^12.3.0",
@@ -42,5 +42,11 @@
     "rollup-plugin-postcss": "^4.0.2",
     "tslib": "^2.8.1",
     "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "@icons-pack/react-simple-icons": "^12.3.0",
+    "lucide-react": "^0.487.0"
   }
 }

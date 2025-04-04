@@ -1,15 +1,22 @@
 {
   "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "jsx": "react-jsx",
+
     "declaration": true,
-    "outDir": "dist",
     "declarationDir": "dist/types",
-    "target": "es5",
-    "module": "esnext",
-    "jsx": "react",
+    "outDir": "dist",
+    "moduleResolution": "node",
+
     "sourceMap": true,
     "strict": true,
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node"
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
   },
   "include": ["src/**/*", "package/**/*"],
   "exclude": ["node_modules", "dist", "demo", "src/data"]

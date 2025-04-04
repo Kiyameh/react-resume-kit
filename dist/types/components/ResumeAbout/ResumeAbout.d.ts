@@ -1,3 +1,2 @@
-import React from 'react';
 import './ResumeAbout.css';
-export default function ResumeAbout(): React.JSX.Element;
+export default function ResumeAbout(): import("react/jsx-runtime").JSX.Element;

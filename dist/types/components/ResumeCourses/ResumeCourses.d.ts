@@ -1,4 +1,3 @@
-import React from 'react';
 import './ResumeCourses.css';
 import '../common.css';
-export default function ResumeCourses(): React.JSX.Element;
+export default function ResumeCourses(): import("react/jsx-runtime").JSX.Element;

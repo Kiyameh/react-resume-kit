@@ -8,4 +8,4 @@ export interface ResumeProps {
     enablePdfDownload?: boolean;
     children: React.ReactNode;
 }
-export default function ResumeLayout({ initialLanguage, resumeContent, enableLanguageSwitch, enablePdfDownload, children, }: ResumeProps): React.JSX.Element;
+export default function ResumeLayout({ initialLanguage, resumeContent, enableLanguageSwitch, enablePdfDownload, children, }: ResumeProps): import("react/jsx-runtime").JSX.Element;

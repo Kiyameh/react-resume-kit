@@ -13,12 +13,22 @@ export default {
       format: 'cjs',
       sourcemap: true,
       name: 'react-lib',
+      compact: true,
+      exports: 'named',
     },
     {
       file: 'dist/index.ems.js',
       format: 'esm',
       sourcemap: true,
+      compact: true,
+      exports: 'named',
     },
+  ],
+  external: [
+    'react',
+    'react-dom',
+    '@icons-pack/react-simple-icons',
+    'lucide-react',
   ],
   plugins: [
     peerDepsExternal(),
@@ -26,8 +36,19 @@ export default {
     commonjs(),
     typescript(),
     postcss({
-      plugins: [],
+      modules: true,
+      minimize: true,
+      extract: true,
+      autoModules: true,
     }),
-    terser(),
+    terser({
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+      },
+      output: {
+        comments: false,
+      },
+    }),
   ],
 }
