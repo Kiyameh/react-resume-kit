@@ -21,8 +21,7 @@
     "url": "https://github.com/Kiyameh/react-resume-kit.git"
   },
   "scripts": {
-    "build": "rollup -c",
-    "version": "npm version patch"
+    "build": "rollup -c"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^12.3.0",
