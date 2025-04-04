@@ -21,17 +21,14 @@
     "url": "https://github.com/Kiyameh/react-resume-kit.git"
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "publish": "npm version patch && npm publish"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^12.3.0",
     "lucide-react": "^0.487.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
-  "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.3",
@@ -39,6 +36,7 @@
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^12.1.2",
     "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
     "rollup": "^4.39.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
