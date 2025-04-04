@@ -1,2 +1,3 @@
+import React from 'react';
 import './PdfDownloadButton.css';
-export default function PdfDownloadButton(): import("react/jsx-runtime").JSX.Element;
+export default function PdfDownloadButton(): React.JSX.Element;
