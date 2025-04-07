@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import {Github, Package, ChevronUp, ChevronDown} from 'lucide-react'
 import styles from './PackageLinks.module.css'
 
