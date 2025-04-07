@@ -3,7 +3,7 @@
 <br/>
 <br/>
 <div align="center">
-  <img src="https://github.com/Kiyameh/react-resume-kit/blob/main/src/assets/logo.png" alt="React Resume Kit Logo" width="300"/>
+  <img src="https://github.com/Kiyameh/react-resume-kit/blob/logo.png" alt="React Resume Kit Logo" width="300"/>
 </div>
 <br/>
 <br/>
