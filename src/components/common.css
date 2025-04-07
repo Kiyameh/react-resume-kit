@@ -1,0 +1,25 @@
+.dateChip {
+  max-width: fit-content;
+  display: inline-flex;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.75rem;
+  transition: background-color 0.2s, color 0.2s;
+  font-weight: normal;
+  border-radius: 5rem;
+  border: 1px solid rgb(93, 182, 255);
+  background-color: rgb(240, 249, 255);
+  color: rgb(3, 105, 161);
+  white-space: nowrap;
+}
+
+.dateChip:hover {
+  background-color: rgb(224, 242, 254);
+}
+
+@media print {
+  .dateChip {
+    font-size: 0.75rem;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

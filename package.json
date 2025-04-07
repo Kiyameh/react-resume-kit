@@ -1,0 +1,63 @@
+{
+  "name": "react-resume-kit",
+  "version": "1.1.0",
+  "license": "MIT",
+  "author": "Andoni Gallardo <kiyameh@outlook.com>",
+  "description": "A collection of components for building a resume or CV with React",
+  "keywords": [
+    "react",
+    "resume",
+    "cv",
+    "curriculum"
+  ],
+  "homepage": "https://github.com/Kiyameh/react-resume-kit#readme",
+  "issues": "https://github.com/Kiyameh/react-resume-kit/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kiyameh/react-resume-kit.git"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && vite build",
+    "storybook": "storybook dev",
+    "npm:publish": "npm run build && npm publish --access public"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@types/css-modules": "^1.0.5",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.3",
+    "vite": "^6.2.5",
+    "vite-plugin-lib-inject-css": "^2.2.1"
+  },
+  "dependencies": {
+    "@icons-pack/react-simple-icons": "^12.5.0",
+    "lucide-react": "^0.487.0",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "peerDependencies": {
+    "@icons-pack/react-simple-icons": "^12.5.0",
+    "lucide-react": "^0.487.0",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  }
+}

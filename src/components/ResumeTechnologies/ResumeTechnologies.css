@@ -1,0 +1,46 @@
+.resume-technologies-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.resume-technologies-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  background-color: #e0f2fe;
+  border-radius: 5rem;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+
+.resume-technologies-chip:hover {
+  background-color: #bae6fd;
+}
+
+.resume-technologies-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #0ea5e9;
+}
+
+.resume-technologies-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #0369a1;
+}
+
+@media print {
+  .resume-technologies-chip {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+  .resume-technologies-icon {
+    display: none;
+  }
+  .resume-technologies-text {
+    font-size: 0.75rem;
+  }
+}
