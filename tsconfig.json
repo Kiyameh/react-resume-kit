@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    /* declaration files */
+    // Generates corresponding .d.ts files for TypeScript files
+    "declaration": true,
+    // Only outputs declaration files, not JavaScript files
+    "emitDeclarationOnly": true,
+
+    /* Module settings */
+    // Specifies ECMAScript target version: ES2020
+    "target": "ES2020",
+    // Use ECMAScript modules (import/export syntax)
+    "module": "ESNext",
+    // Use the bundler module resolution strategy
+    "moduleResolution": "Bundler",
+    // Allow importing files with .ts and .tsx extensions
+    "allowImportingTsExtensions": true,
+
+    /* Language features */
+    // Enable JSX support for React
+    "jsx": "react"
+  },
+  // Exclude these directories from TypeScript compilation
+  "exclude": ["node_modules", "dist", "demp", "public"]
+}

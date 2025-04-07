@@ -65,7 +65,7 @@ function I() {
     /* @__PURE__ */ e.createElement("p", { className: "dateChip" }, a.date)
   )));
 }
-function L() {
+function x() {
   const { content: t } = c();
   return /* @__PURE__ */ e.createElement("header", { className: "resume-header-header" }, /* @__PURE__ */ e.createElement("div", { className: "resume-header-profile" }, t.picture && /* @__PURE__ */ e.createElement("div", { className: "resume-header-picture" }, /* @__PURE__ */ e.createElement(
     "img",
@@ -104,7 +104,7 @@ function b() {
     "Descargar Pdf"
   );
 }
-function x({
+function L({
   initialLanguage: t = "en",
   resumeContent: a,
   enableLanguageSwitch: s,
@@ -201,20 +201,14 @@ function S() {
     )
   )));
 }
-const $ = ["en", "es"];
 export {
-  u as LanguageContext,
-  v as LanguageSwitcher,
-  b as PdfDownloadButton,
   y as ResumeAbout,
   C as ResumeContact,
   I as ResumeCourses,
-  L as ResumeHeader,
-  x as ResumeLayout,
+  x as ResumeHeader,
+  L as ResumeLayout,
   R as ResumeProjects,
   P as ResumeSoftSkills,
   j as ResumeTechnologies,
-  S as ResumeWorks,
-  $ as suportedLanguages,
-  c as useLanguage
+  S as ResumeWorks
 };
