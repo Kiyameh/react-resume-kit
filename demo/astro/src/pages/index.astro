@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro'
+import bg from '../assets/background.svg'
+import Resume from '../components/Resume'
+import '../styles/global.css'
+---
+
+<Layout>
+  <div class="container">
+    <Resume client:load />
+    <img
+      class="background"
+      src={bg.src}
+      alt="bg"
+    />
+  </div>
+</Layout>
+
+<style>
+  .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(100px);
+  }
+</style>
