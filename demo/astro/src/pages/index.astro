@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro'
 import bg from '../assets/background.svg'
 import Resume from '../components/Resume'
 import '../styles/global.css'
+import PackageLinks from '../components/PackageLinks/PackageLinks'
 ---
 
 <Layout>
@@ -14,6 +15,12 @@ import '../styles/global.css'
       alt="bg"
     />
   </div>
+  <PackageLinks
+    client:load
+    npmUrl="https://www.npmjs.com/package/react-resume-kit"
+    githubUrl="https://github.com/Kiyameh/react-resume-kit"
+    packageName="react-resume-kit"
+  />
 </Layout>
 
 <style>

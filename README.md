@@ -10,6 +10,10 @@
 
 A modern, customizable React component for creating beautiful and professional resumes or curriculum for your website. Built with TypeScript.
 
+## Live Demo
+
+Check out the live demo at [https://react-resume-kit.vercel.app/](https://react-resume-kit.vercel.app/)
+
 ## Features
 
 - 🌐 Multi-language support
