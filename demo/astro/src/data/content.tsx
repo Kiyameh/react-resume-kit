@@ -1,5 +1,5 @@
-import type {Content} from 'react-resume-kit'
-import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNodedotjs, SiLinux, SiFigma, SiGithub, SiX } from '@icons-pack/react-simple-icons'
+import type { Content } from 'react-resume-kit'
+import { SiHtml5, SiCss, SiJavascript, SiTypescript, SiReact, SiNodedotjs, SiLinux, SiFigma, SiGithub, SiX } from '@icons-pack/react-simple-icons'
 import { Linkedin } from 'lucide-react'
 import { MessageSquare, Brain, Users } from 'lucide-react'
 
@@ -79,7 +79,7 @@ export const content: Content = {
     // Technologies
     technologies: [
       {name: 'HTML5', icon: <SiHtml5/> },
-      {name: 'CSS3', icon: <SiCss3/> },
+      {name: 'CSS3', icon: <SiCss/> },
       {name: 'JavaScript', icon: <SiJavascript/> },
       {name: 'TypeScript', icon: <SiTypescript/> },
       {name: 'React', icon: <SiReact/> },
@@ -232,7 +232,7 @@ export const content: Content = {
     // Technologies
     technologies: [
       {name: 'HTML5', icon: <SiHtml5/> },
-      {name: 'CSS3', icon: <SiCss3/> },
+      {name: 'CSS3', icon: <SiCss/> },
       {name: 'JavaScript', icon: <SiJavascript/> },
       {name: 'TypeScript', icon: <SiTypescript/> },
       {name: 'React', icon: <SiReact/> },

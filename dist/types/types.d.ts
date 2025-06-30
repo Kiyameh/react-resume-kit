@@ -48,7 +48,7 @@ export interface ResumeContent {
     soft_skills: Array<{
         title: string;
         description: string;
-        icon: LucideIconName;
+        icon: ReactElement;
     }>;
     projects: Array<{
         title: string;
@@ -60,7 +60,7 @@ export interface ResumeContent {
     author?: string;
     social_links: Array<{
         name: string;
-        icon: IconName;
+        icon: ReactElement;
         url: string;
     }>;
 }

@@ -1,6 +1,6 @@
 {
   "name": "react-resume-kit",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "license": "MIT",
   "author": "Andoni Abarzuza <kiyameh@outlook.com>",
   "description": "A collection of components for building a resume or CV with React",
