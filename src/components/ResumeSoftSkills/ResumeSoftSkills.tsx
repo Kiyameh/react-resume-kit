@@ -1,9 +1,7 @@
-import React from 'react'
-import {SVGProps} from 'react'
+import React, { isValidElement, cloneElement } from 'react'
 import {useLanguage} from '../../context/language-context'
 import './ResumeSoftSkills.css'
-import * as LucideIcons from 'lucide-react'
-import {LucideIconName, ResumeContent} from '../../types/types'
+import {ResumeContent} from '../../types/types'
 
 export default function ResumeSoftSkills() {
   const {content} = useLanguage()
@@ -17,26 +15,27 @@ export default function ResumeSoftSkills() {
 
       <div className="resume-soft-skills-container">
         {content.soft_skills.map(
-          (skill: ResumeContent['soft_skills'][number], index: number) => {
-            const IconComponent = LucideIcons[
-              skill.icon as LucideIconName
-            ] as React.ComponentType<SVGProps<SVGSVGElement>>
-
-            return (
-              <div
-                key={index}
-                className="resume-soft-skills-skill"
-              >
-                <IconComponent className="resume-soft-skills-icon" />
-                <div>
-                  <p className="resume-soft-skills-skillTitle">{skill.title}</p>
-                  <p className="resume-soft-skills-skillDescription">
-                    {skill.description}
-                  </p>
-                </div>
+          (skill: ResumeContent['soft_skills'][number], index: number) => (
+            <div
+              key={index}
+              className="resume-soft-skills-skill"
+            >
+              {isValidElement(skill.icon)
+                ? cloneElement(skill.icon as React.ReactElement<any, any>, {
+                    className: [
+                      (skill.icon as React.ReactElement<any, any>).props.className,
+                      'resume-soft-skills-icon'
+                    ].filter(Boolean).join(' ')
+                  })
+                : skill.icon}
+              <div>
+                <p className="resume-soft-skills-skillTitle">{skill.title}</p>
+                <p className="resume-soft-skills-skillDescription">
+                  {skill.description}
+                </p>
               </div>
-            )
-          }
+            </div>
+          )
         )}
       </div>
     </section>

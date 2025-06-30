@@ -1,4 +1,7 @@
 import type {Content} from 'react-resume-kit'
+import { SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNodedotjs, SiLinux, SiFigma, SiGithub, SiX } from '@icons-pack/react-simple-icons'
+import { Linkedin } from 'lucide-react'
+import { MessageSquare, Brain, Users } from 'lucide-react'
 
 export const content: Content = {
   en: {
@@ -62,12 +65,12 @@ export const content: Content = {
     // Education
     courses: [
       {
-        degree: 'Bachelor’s Degree in Computer Engineering',
+        degree: "Bachelor's Degree in Computer Engineering",
         school: 'Polytechnic University of Madrid',
         date: '2015 - 2019',
       },
       {
-        degree: 'Master’s in User Experience and Interface Design',
+        degree: "Master's in User Experience and Interface Design",
         school: 'University of Barcelona',
         date: '2020 - 2022',
       },
@@ -75,14 +78,14 @@ export const content: Content = {
 
     // Technologies
     technologies: [
-      {name: 'HTML5', icon: 'SiHtml5'},
-      {name: 'CSS3', icon: 'SiCss3'},
-      {name: 'JavaScript', icon: 'SiJavascript'},
-      {name: 'TypeScript', icon: 'SiTypescript'},
-      {name: 'React', icon: 'SiReact'},
-      {name: 'Node', icon: 'SiNodedotjs'},
-      {name: 'Linux', icon: 'SiLinux'},
-      {name: 'Figma', icon: 'SiFigma'},
+      {name: 'HTML5', icon: <SiHtml5/> },
+      {name: 'CSS3', icon: <SiCss3/> },
+      {name: 'JavaScript', icon: <SiJavascript/> },
+      {name: 'TypeScript', icon: <SiTypescript/> },
+      {name: 'React', icon: <SiReact/> },
+      {name: 'Node', icon: <SiNodedotjs/> },
+      {name: 'Linux', icon: <SiLinux/> },
+      {name: 'Figma', icon: <SiFigma/> },
     ],
 
     // Soft Skills
@@ -91,19 +94,19 @@ export const content: Content = {
         title: 'Effective Communication',
         description:
           'Excellent written and verbal communication skills. Experience in presentations and collaborative work.',
-        icon: 'MessageSquare',
+        icon: <MessageSquare />,
       },
       {
         title: 'Problem Solving',
         description:
           'Ability to identify and resolve problems efficiently, even under pressure.',
-        icon: 'Brain',
+        icon: <Brain />,
       },
       {
         title: 'Teamwork',
         description:
           'Experience working in multidisciplinary and collaborative teams.',
-        icon: 'Users',
+        icon: <Users />,
       },
     ],
 
@@ -140,17 +143,17 @@ export const content: Content = {
     social_links: [
       {
         name: 'GitHub',
-        icon: 'SiGithub',
+        icon: <SiGithub />,
         url: 'github.com/ginger',
       },
       {
         name: 'LinkedIn',
-        icon: 'Linkedin',
+        icon: <Linkedin />,
         url: 'linkedin.com/in/ginger/',
       },
       {
         name: 'X',
-        icon: 'SiX',
+        icon: <SiX />,
         url: 'x.com/ginger',
       },
     ],
@@ -228,14 +231,14 @@ export const content: Content = {
 
     // Technologies
     technologies: [
-      {name: 'HTML5', icon: 'SiHtml5'},
-      {name: 'CSS3', icon: 'SiCss3'},
-      {name: 'JavaScript', icon: 'SiJavascript'},
-      {name: 'TypeScript', icon: 'SiTypescript'},
-      {name: 'React', icon: 'SiReact'},
-      {name: 'Node', icon: 'SiNodedotjs'},
-      {name: 'Linux', icon: 'SiLinux'},
-      {name: 'Figma', icon: 'SiFigma'},
+      {name: 'HTML5', icon: <SiHtml5/> },
+      {name: 'CSS3', icon: <SiCss3/> },
+      {name: 'JavaScript', icon: <SiJavascript/> },
+      {name: 'TypeScript', icon: <SiTypescript/> },
+      {name: 'React', icon: <SiReact/> },
+      {name: 'Node', icon: <SiNodedotjs/> },
+      {name: 'Linux', icon: <SiLinux/> },
+      {name: 'Figma', icon: <SiFigma/> },
     ],
 
     // Soft Skills
@@ -244,19 +247,19 @@ export const content: Content = {
         title: 'Comunicación Efectiva',
         description:
           'Excelentes habilidades de comunicación tanto escritas como verbales. Experiencia en presentaciones y trabajo colaborativo.',
-        icon: 'MessageSquare',
+        icon: <MessageSquare />,
       },
       {
         title: 'Resolución de Problemas',
         description:
           'Capacidad para identificar y solucionar problemas de manera eficiente, incluso bajo presión.',
-        icon: 'Brain',
+        icon: <Brain />,
       },
       {
         title: 'Trabajo en Equipo',
         description:
           'Experiencia trabajando en equipos multidisciplinarios y colaborativos.',
-        icon: 'Users',
+        icon: <Users />,
       },
     ],
 
@@ -293,17 +296,17 @@ export const content: Content = {
     social_links: [
       {
         name: 'GitHub',
-        icon: 'SiGithub',
+        icon: <SiGithub />,
         url: 'github.com/ginger',
       },
       {
         name: 'LinkedIn',
-        icon: 'Linkedin',
+        icon: <Linkedin />,
         url: 'linkedin.com/in/ginger/',
       },
       {
         name: 'X',
-        icon: 'SiX',
+        icon: <SiX />,
         url: 'x.com/ginger',
       },
     ],

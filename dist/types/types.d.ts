@@ -1,3 +1,4 @@
+import { ReactElement } from 'react';
 import * as LucideIcons from 'lucide-react';
 import * as SimpleIcons from '@icons-pack/react-simple-icons';
 export type LucideIconName = keyof typeof LucideIcons;
@@ -42,7 +43,7 @@ export interface ResumeContent {
     }>;
     technologies: Array<{
         name: string;
-        icon: SimpleIconName;
+        icon: ReactElement;
     }>;
     soft_skills: Array<{
         title: string;

@@ -1,5 +1,6 @@
 import * as LucideIcons from 'lucide-react'
 import * as SimpleIcons from '@icons-pack/react-simple-icons'
+import { ReactNode, ReactElement } from 'react'
 
 export type LucideIconName = keyof typeof LucideIcons
 export type SimpleIconName = keyof typeof SimpleIcons
@@ -61,7 +62,7 @@ export interface ResumeContent {
   // Technologies
   technologies: Array<{
     name: string
-    icon: SimpleIconName
+    icon: ReactElement
   }>
 
   // Soft Skills

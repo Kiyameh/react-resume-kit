@@ -19,7 +19,7 @@ Check out the live demo at [https://react-resume-kit.vercel.app/](https://react-
 - 🌐 Multi-language support
 - 📄 PDF download functionality
 - 🎨 Customizable themes
-- 🎯 Icon support (Lucide Icons and Simple Icons)
+- 🎯 Icon support (any React element, recommended Lucide Icons, Simple Icons, etc.)
 - ⚡ Easy to configure and integrate
 - 📱 Responsive design
 - 🎨 Modern and clean UI
@@ -39,7 +39,7 @@ import {content} from './your-content-file'
 function App() {
   return(
     <ResumeLayout resumeContent={content}>
-      <ResumeHeader>
+      <ResumeHeader />
     </ResumeLayout>
   )
 }
@@ -47,7 +47,7 @@ function App() {
 
 ## Configuration
 
-STEP1: Add the ResumeLayout componente by wrapping one or more of the following:
+STEP1: Add the ResumeLayout component by wrapping one or more of the following:
 
 ```tsx
  <ResumeHeader/>
@@ -70,6 +70,8 @@ STEP2: You can add the following props to ResumeLayout component:
 STEP3: Copy the data/exampleContent file that contains all the resume data. Update it. The content should follow this structure:
 
 ```typescript
+import { ReactElement } from 'react'
+
 type ResumeContent = {
   // One for each language
   en: {
@@ -121,14 +123,14 @@ type ResumeContent = {
     // Technologies
     technologies: Array<{
       name: string
-      icon: SimpleIconName
+      icon: ReactElement
     }>
 
     // Soft Skills
     soft_skills: Array<{
       title: string
       description: string
-      icon: LucideIconName
+      icon: ReactElement
     }>
 
     // Projects
@@ -144,19 +146,51 @@ type ResumeContent = {
     author: string
     socialLinks: Array<{
       name: string
-      icon: LucideIconName | SimpleIconName
+      icon: ReactElement
       url: string
     }>
   }
 }
 ```
 
+### Example usage for technologies
+
+```tsx
+import { SiReact, SiTypescript } from '@icons-pack/react-simple-icons';
+
+const content = {
+  en: {
+    // ...
+    technologies: [
+      { name: 'React', icon: <SiReact /> },
+      { name: 'TypeScript', icon: <SiTypescript /> },
+      // ...
+    ],
+    // ...
+  },
+  // ...
+}
+```
+
+---
+
 ## Icons
 
-The component supports both Lucide Icons and Simple Icons. To use them:
+The component supports any React element as an icon. You can use icons from any library, such as [Simple Icons](https://simpleicons.org) or [Lucide Icons](https://lucide.dev/), by importing the icon component and passing it directly:
 
-- For Lucide Icons: Use the icon name directly. Can see them in https://lucide.dev/
-- For Simple Icons: Use the 'Si' prefix followed by the icon name (e.g., 'SiReact'). Can see them in https://simpleicons.org
+```tsx
+import { SiReact } from '@icons-pack/react-simple-icons';
+
+// ...
+technologies: [
+  { name: 'React', icon: <SiReact /> },
+  // ...
+]
+```
+
+You are responsible for importing and rendering the icon you want. The component will automatically inject the necessary CSS class for consistent styling.
+
+---
 
 ## Language Support
 

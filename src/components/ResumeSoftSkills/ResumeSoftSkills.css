@@ -52,7 +52,8 @@
 .resume-soft-skills-icon {
   margin-top: 0.25rem;
   color: #0284c7;
-  min-width: 2rem;
+  min-width: 1rem;
+  min-height: 1rem;
 }
 
 @media print {
