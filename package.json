@@ -1,6 +1,6 @@
 {
   "name": "react-resume-kit",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "license": "MIT",
   "author": "Andoni Abarzuza <kiyameh@outlook.com>",
   "description": "A collection of components for building a resume or CV with React",
@@ -51,10 +51,14 @@
     "vite-plugin-lib-inject-css": "^2.2.2"
   },
   "dependencies": {
+    "@icons-pack/react-simple-icons": "^13.3.0",
+    "lucide-react": "^0.525.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
   "peerDependencies": {
+    "@icons-pack/react-simple-icons": "^13.3.0",
+    "lucide-react": "^0.525.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   }

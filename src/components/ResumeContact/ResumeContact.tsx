@@ -1,9 +1,10 @@
 import React from 'react'
 import './ResumeContact.css'
-import * as SimpleIcons from '@icons-pack/react-simple-icons'
-import * as LucideIcons from 'lucide-react'
+
 import {useLanguage} from '../../context/language-context'
 import {ResumeContent} from '../../types/types'
+import { SiOpensourceinitiative } from '@icons-pack/react-simple-icons'
+import { GitFork } from 'lucide-react'
 
 export default function ResumeContact() {
   const {content} = useLanguage()
@@ -40,7 +41,7 @@ export default function ResumeContact() {
           rel="noreferrer noopener"
         >
           MIT License
-          <SimpleIcons.SiOpensourceinitiative className="resume-contact-icon" />
+          <SiOpensourceinitiative className="resume-contact-icon" />
         </a>
       </p>
       <p className="resume-contact-atribution">
@@ -50,7 +51,7 @@ export default function ResumeContact() {
           href="https://github.com/Kiyameh/react-resume-kit"
         >
           <span> You can fork it here</span>
-          <LucideIcons.GitFork className="resume-contact-icon" />
+          <GitFork className="resume-contact-icon" />
         </a>
       </p>
     </section>
