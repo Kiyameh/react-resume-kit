@@ -1,13 +1,13 @@
-import e, { useState as u, useEffect as N, cloneElement as h, isValidElement as k } from "react";
-import './index.css';const d = e.createContext(void 0);
-function c() {
-  const t = e.useContext(d);
+import e, { useState as d, useEffect as w, cloneElement as E, isValidElement as p } from "react";
+import './index.css';const g = e.createContext(void 0);
+function s() {
+  const t = e.useContext(g);
   if (t === void 0)
     throw new Error("useLanguage must be used within a LanguageProvider");
   return t;
 }
-function b() {
-  const { content: t } = c();
+function L() {
+  const { content: t } = s();
   return /* @__PURE__ */ e.createElement("section", null, /* @__PURE__ */ e.createElement("h2", null, t.about_title), /* @__PURE__ */ e.createElement("div", { className: "rrk-about-card" }, /* @__PURE__ */ e.createElement(
     "svg",
     {
@@ -27,8 +27,8 @@ function b() {
     /* @__PURE__ */ e.createElement("path", { d: "M12 8h.01" })
   ), /* @__PURE__ */ e.createElement("p", { className: "rrk-about-text" }, t.about_text)));
 }
-function L() {
-  const { content: t } = c();
+function x() {
+  const { content: t } = s();
   return /* @__PURE__ */ e.createElement("section", null, /* @__PURE__ */ e.createElement("h2", null, t.connect_title), /* @__PURE__ */ e.createElement("div", { className: "rrk-contact-social-buttons" }, t.social_links.map(
     (r, a) => /* @__PURE__ */ e.createElement(
       "a",
@@ -79,12 +79,12 @@ function L() {
     /* @__PURE__ */ e.createElement("path", { d: "M12 12v3" })
   )), /* @__PURE__ */ e.createElement("span", { className: "rrk-contact-repository-url" }, "https://github.com/Kiyameh/react-resume-kit")));
 }
-function y() {
-  const { content: t } = c();
+function b() {
+  const { content: t } = s();
   return /* @__PURE__ */ e.createElement("section", null, /* @__PURE__ */ e.createElement("h2", null, t.courses_title), t.courses.map((r, a) => /* @__PURE__ */ e.createElement("div", { key: a, className: "rrk-courses-course" }, /* @__PURE__ */ e.createElement("div", null, /* @__PURE__ */ e.createElement("h3", { className: "rrk-courses-degree" }, r.degree), /* @__PURE__ */ e.createElement("p", { className: "rrk-courses-school" }, r.school)), /* @__PURE__ */ e.createElement("p", { className: "rrk-dateChip" }, r.date))));
 }
 function C() {
-  const { content: t } = c();
+  const { content: t } = s();
   return /* @__PURE__ */ e.createElement("header", { className: "rrk-header-layout" }, /* @__PURE__ */ e.createElement("div", { className: "rrk-header-profile" }, t.picture && /* @__PURE__ */ e.createElement("div", { className: "rrk-header-picture" }, /* @__PURE__ */ e.createElement(
     "img",
     {
@@ -141,22 +141,49 @@ function C() {
     /* @__PURE__ */ e.createElement("circle", { cx: "12", cy: "10", r: "3" })
   ), /* @__PURE__ */ e.createElement("span", null, t.location))));
 }
-function f({
+function v() {
+  const [t, r] = d(!1), [a, n] = d(!1), { language: c, setLanguage: l, content: o } = s();
+  w(() => {
+    n(!0);
+  }, []);
+  const u = () => {
+    window.print();
+  }, h = () => {
+    r(!t);
+  }, k = (m) => {
+    l(m), r(!1);
+  }, i = (m) => c === m;
+  return {
+    // Funciones
+    handlePrint: u,
+    handleLanguageSelect: k,
+    handleLanguageButtonClick: h,
+    // Estados
+    isLanguageMenuOpen: t,
+    isMounted: a,
+    // Datos del idioma
+    language: c,
+    content: o,
+    languageLabels: o.language_labels,
+    // Funciones de utilidad
+    isLanguageActive: i
+  };
+}
+function N({
   enableLanguageSwitch: t,
   enablePdfDownload: r
 }) {
-  const [a, n] = u(!1), [l, s] = u(!1);
-  N(() => {
-    s(!0);
-  }, []);
-  const i = () => {
-    window.print();
-  }, { language: E, setLanguage: p, content: m } = c(), g = () => {
-    n(!a);
-  }, w = (o) => {
-    p(o), n(!1);
-  };
-  return /* @__PURE__ */ e.createElement("nav", { className: "rrk-toolbar" }, r && /* @__PURE__ */ e.createElement("button", { onClick: i, className: "rrk-download-button" }, /* @__PURE__ */ e.createElement(
+  const {
+    handlePrint: a,
+    handleLanguageSelect: n,
+    handleLanguageButtonClick: c,
+    isLanguageMenuOpen: l,
+    isMounted: o,
+    content: u,
+    languageLabels: h,
+    isLanguageActive: k
+  } = v();
+  return /* @__PURE__ */ e.createElement("nav", { className: "rrk-toolbar" }, r && /* @__PURE__ */ e.createElement("button", { onClick: a, className: "rrk-download-button" }, /* @__PURE__ */ e.createElement(
     "svg",
     {
       xmlns: "http://www.w3.org/2000/svg",
@@ -177,8 +204,8 @@ function f({
   ), /* @__PURE__ */ e.createElement("span", { className: "rrk-download-button-text" }, "Pdf")), t && /* @__PURE__ */ e.createElement(
     "button",
     {
-      className: `rrk-language-switcher ${a ? "active" : ""}`,
-      onClick: g
+      className: `rrk-language-switcher ${l ? "active" : ""}`,
+      onClick: c
     },
     /* @__PURE__ */ e.createElement(
       "svg",
@@ -198,41 +225,41 @@ function f({
       /* @__PURE__ */ e.createElement("path", { d: "M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" }),
       /* @__PURE__ */ e.createElement("path", { d: "M2 12h20" })
     ),
-    /* @__PURE__ */ e.createElement("span", { className: "rrk-language-switcher-text" }, m.switcher_text),
+    /* @__PURE__ */ e.createElement("span", { className: "rrk-language-switcher-text" }, u.switcher_text),
     /* @__PURE__ */ e.createElement(
       "nav",
       {
-        className: `rrk-language-switcher-buttons ${l && a ? "open" : ""}`
+        className: `rrk-language-switcher-buttons ${o && l ? "open" : ""}`
       },
-      m.language_labels.map(
-        (o, v) => /* @__PURE__ */ e.createElement(
+      h.map(
+        (i, m) => /* @__PURE__ */ e.createElement(
           "button",
           {
-            key: v,
-            onClick: () => w(o.value),
-            className: `language-switcher-button ${E === o.value ? "language-switcher-active" : ""}`
+            key: m,
+            onClick: () => n(i.value),
+            className: `language-switcher-button ${k(i.value) ? "language-switcher-active" : ""}`
           },
-          o.label
+          i.label
         )
       )
     )
   ));
 }
-function M({
+function y({
   initialLanguage: t = "en",
   resumeContent: r,
   enableLanguageSwitch: a,
   enablePdfDownload: n,
-  children: l
+  children: c
 }) {
-  const [s, i] = e.useState(t);
+  const [l, o] = e.useState(t);
   return /* @__PURE__ */ e.createElement(
-    d.Provider,
+    g.Provider,
     {
-      value: { language: s, setLanguage: i, content: r[s] }
+      value: { language: l, setLanguage: o, content: r[l] }
     },
-    /* @__PURE__ */ e.createElement("main", { className: "rrk-resume" }, l, /* @__PURE__ */ e.createElement(
-      f,
+    /* @__PURE__ */ e.createElement("main", { className: "rrk-resume" }, c, /* @__PURE__ */ e.createElement(
+      N,
       {
         enableLanguageSwitch: a,
         enablePdfDownload: n
@@ -240,8 +267,8 @@ function M({
     ))
   );
 }
-function _() {
-  const { content: t } = c();
+function M() {
+  const { content: t } = s();
   return /* @__PURE__ */ e.createElement("section", null, /* @__PURE__ */ e.createElement("h2", null, t.projects_title), /* @__PURE__ */ e.createElement("div", null, t.projects.map((r, a) => {
     var n;
     return /* @__PURE__ */ e.createElement("div", { key: a, className: "rrk-projects-card" }, /* @__PURE__ */ e.createElement("div", { className: "rrk-projects-header" }, /* @__PURE__ */ e.createElement("h3", { className: "rrk-projects-title" }, r.title), r.link && /* @__PURE__ */ e.createElement(
@@ -270,13 +297,13 @@ function _() {
         /* @__PURE__ */ e.createElement("path", { d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" })
       ),
       /* @__PURE__ */ e.createElement("p", { className: "rrk-projects-link" }, r.link)
-    )), /* @__PURE__ */ e.createElement("div", { className: "rrk-projects-technologies" }, (n = r.technologies) == null ? void 0 : n.map((l, s) => /* @__PURE__ */ e.createElement("span", { className: "rrk-projects-chip", key: s }, l))), /* @__PURE__ */ e.createElement("div", { className: "rrk-projects-description" }, /* @__PURE__ */ e.createElement("p", null, r.description), /* @__PURE__ */ e.createElement("p", { className: "rrk-projects-features" }, /* @__PURE__ */ e.createElement("span", null, `${t.projects_subtitle}: `), r.features)));
+    )), /* @__PURE__ */ e.createElement("div", { className: "rrk-projects-technologies" }, (n = r.technologies) == null ? void 0 : n.map((c, l) => /* @__PURE__ */ e.createElement("span", { className: "rrk-projects-chip", key: l }, c))), /* @__PURE__ */ e.createElement("div", { className: "rrk-projects-description" }, /* @__PURE__ */ e.createElement("p", null, r.description), /* @__PURE__ */ e.createElement("p", { className: "rrk-projects-features" }, /* @__PURE__ */ e.createElement("span", null, `${t.projects_subtitle}: `), r.features)));
   })));
 }
-function j() {
-  const { content: t } = c();
+function _() {
+  const { content: t } = s();
   return /* @__PURE__ */ e.createElement("section", null, /* @__PURE__ */ e.createElement("h2", null, t.soft_skills_title), /* @__PURE__ */ e.createElement("h3", { className: "rrk-soft-skills-subtitle" }, t.soft_skills_subtitle), /* @__PURE__ */ e.createElement("div", { className: "rrk-soft-skills-container" }, t.soft_skills.map(
-    (r, a) => /* @__PURE__ */ e.createElement("div", { key: a, className: "rrk-soft-skills-card" }, k(r.icon) ? h(r.icon, {
+    (r, a) => /* @__PURE__ */ e.createElement("div", { key: a, className: "rrk-soft-skills-card" }, p(r.icon) ? E(r.icon, {
       className: [
         r.icon.props.className,
         "rrk-soft-skills-icon"
@@ -284,10 +311,10 @@ function j() {
     }) : r.icon, /* @__PURE__ */ e.createElement("div", null, /* @__PURE__ */ e.createElement("p", { className: "rrk-soft-skills-skillTitle" }, r.title), /* @__PURE__ */ e.createElement("p", { className: "rrk-soft-skills-skillDescription" }, r.description)))
   )));
 }
-function B() {
-  const { content: t } = c();
+function j() {
+  const { content: t } = s();
   return /* @__PURE__ */ e.createElement("section", null, /* @__PURE__ */ e.createElement("h2", null, t.techs_title), /* @__PURE__ */ e.createElement("div", { className: "rrk-technologies-container" }, t.technologies.map(
-    (r, a) => /* @__PURE__ */ e.createElement("div", { key: a, className: "rrk-technologies-chip" }, k(r.icon) ? h(r.icon, {
+    (r, a) => /* @__PURE__ */ e.createElement("div", { key: a, className: "rrk-technologies-chip" }, p(r.icon) ? E(r.icon, {
       className: [
         r.icon.props.className,
         "rrk-technologies-icon"
@@ -295,22 +322,23 @@ function B() {
     }) : r.icon, /* @__PURE__ */ e.createElement("span", { className: "rrk-technologies-text" }, r.name))
   )));
 }
-function R() {
-  const { content: t } = c();
+function B() {
+  const { content: t } = s();
   return /* @__PURE__ */ e.createElement("section", null, /* @__PURE__ */ e.createElement("h2", null, t.works_title), /* @__PURE__ */ e.createElement("div", null, t.works.map(
     (r, a) => /* @__PURE__ */ e.createElement("div", { key: a, className: "rrk-works-work" }, /* @__PURE__ */ e.createElement("div", { className: "rrk-works-workHeader" }, /* @__PURE__ */ e.createElement("div", { className: "rrk-works-leftHeader" }, /* @__PURE__ */ e.createElement("h3", { className: "rrk-works-title" }, r.title), /* @__PURE__ */ e.createElement("p", { className: "rrk-works-company" }, r.company)), /* @__PURE__ */ e.createElement("div", { className: "rrk-works-rightHeader" }, /* @__PURE__ */ e.createElement("p", { className: "rrk-dateChip" }, r.date), /* @__PURE__ */ e.createElement("p", { className: "rrk-works-location" }, r.location))), /* @__PURE__ */ e.createElement("ul", { className: "rrk-works-points" }, r.points.map(
-      (n, l) => /* @__PURE__ */ e.createElement("li", { key: l }, n)
+      (n, c) => /* @__PURE__ */ e.createElement("li", { key: c }, n)
     )))
   )));
 }
 export {
-  b as ResumeAbout,
-  L as ResumeContact,
-  y as ResumeCourses,
+  L as ResumeAbout,
+  x as ResumeContact,
+  b as ResumeCourses,
   C as ResumeHeader,
-  M as ResumeLayout,
-  _ as ResumeProjects,
-  j as ResumeSoftSkills,
-  B as ResumeTechnologies,
-  R as ResumeWorks
+  y as ResumeLayout,
+  M as ResumeProjects,
+  _ as ResumeSoftSkills,
+  j as ResumeTechnologies,
+  B as ResumeWorks,
+  v as useToolbar
 };

@@ -9,3 +9,5 @@ export { default as ResumeSoftSkills } from './components/ResumeSoftSkills/Resum
 export { default as ResumeTechnologies } from './components/ResumeTechnologies/ResumeTechnologies';
 export { default as ResumeWorks } from './components/ResumeWorks/ResumeWorks';
 export { Content };
+export { useToolbar } from './hooks/useToolbar';
+export type { UseToolbarReturn } from './hooks/useToolbar';
