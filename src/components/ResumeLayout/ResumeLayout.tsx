@@ -6,8 +6,7 @@ import "./../theme.css";
 import "./ResumeLayout.css";
 import { LanguageContext } from "../../context/language-context";
 import { Language, ResumeContent } from "../../types/types";
-import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
-import PdfDownloadButton from "../PdfDownloadButton/PdfDownloadButton";
+import Toolbar from "../Toolbar/Toolbar";
 
 export interface ResumeProps {
   resumeContent: Record<Language, ResumeContent>;
@@ -32,8 +31,10 @@ export default function ResumeLayout({
     >
       <main className="rrk-resume">
         {children}
-        {enablePdfDownload && <PdfDownloadButton />}
-        {enableLanguageSwitch && <LanguageSwitcher />}
+        <Toolbar
+          enableLanguageSwitch={enableLanguageSwitch}
+          enablePdfDownload={enablePdfDownload}
+        />
       </main>
     </LanguageContext.Provider>
   );

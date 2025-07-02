@@ -1,0 +1,231 @@
+/* ========================================
+   TEMAS PERSONALIZADOS PARA REACT-RESUME-KIT
+   ======================================== */
+
+/* ========================================
+   TEMA 1: MINIMALISTA Y ELEGANTE
+   ======================================== */
+[data-theme="minimal"] {
+  --rrk-primary: #2c3e50;
+  --rrk-primary-soft: color-mix(in srgb, #2c3e50, white 40%);
+  --rrk-content: #2c3e50;
+  --rrk-content-soft: color-mix(in srgb, #2c3e50, white 30%);
+
+  --rrk-background: white;
+  --rrk-surface-100: color-mix(in srgb, #2c3e50, white 95%);
+  --rrk-surface-200: color-mix(in srgb, #2c3e50, white 85%);
+  --rrk-surface-300: color-mix(in srgb, #2c3e50, white 75%);
+
+  --rrk-shadow-small: none;
+  --rrk-shadow-medium: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --rrk-shadow-large: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  --rrk-radius-small: 0;
+  --rrk-radius-medium: 0.25rem;
+  --rrk-radius-large: 0.5rem;
+}
+
+/* ========================================
+   TEMA 2: MODERNO CON GRADIENTES
+   ======================================== */
+[data-theme="gradient"] {
+  --rrk-primary: #667eea;
+  --rrk-primary-soft: color-mix(in srgb, #667eea, white 40%);
+  --rrk-content: #2d3748;
+  --rrk-content-soft: color-mix(in srgb, #2d3748, white 30%);
+
+  --rrk-background: white;
+  --rrk-surface-100: color-mix(in srgb, #667eea, white 95%);
+  --rrk-surface-200: color-mix(in srgb, #667eea, white 85%);
+  --rrk-surface-300: color-mix(in srgb, #667eea, white 75%);
+
+  --rrk-shadow-small: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --rrk-shadow-medium: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --rrk-shadow-large: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+  --rrk-radius-small: 0.5rem;
+  --rrk-radius-medium: 1rem;
+  --rrk-radius-large: 1.5rem;
+}
+
+/* ========================================
+   TEMA 3: OSCURO ELEGANTE
+   ======================================== */
+[data-theme="dark-elegant"] {
+  --rrk-primary: #60a5fa;
+  --rrk-primary-soft: color-mix(in srgb, #60a5fa, white 40%);
+  --rrk-content: #f1f5f9;
+  --rrk-content-soft: color-mix(in srgb, #f1f5f9, white 30%);
+
+  --rrk-background: #0f172a;
+  --rrk-surface-100: color-mix(in srgb, #60a5fa, #0f172a 95%);
+  --rrk-surface-200: color-mix(in srgb, #60a5fa, #0f172a 85%);
+  --rrk-surface-300: color-mix(in srgb, #60a5fa, #0f172a 75%);
+
+  --rrk-shadow-small: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --rrk-shadow-medium: 0 10px 25px rgba(0, 0, 0, 0.4);
+  --rrk-shadow-large: 0 20px 40px rgba(0, 0, 0, 0.5);
+
+  --rrk-radius-small: 0.375rem;
+  --rrk-radius-medium: 0.75rem;
+  --rrk-radius-large: 1rem;
+}
+
+/* ========================================
+   TEMA 4: CORPORATIVO PROFESIONAL
+   ======================================== */
+[data-theme="corporate"] {
+  --rrk-primary: #1e40af;
+  --rrk-primary-soft: color-mix(in srgb, #1e40af, white 40%);
+  --rrk-content: #1e293b;
+  --rrk-content-soft: color-mix(in srgb, #1e293b, white 30%);
+
+  --rrk-background: white;
+  --rrk-surface-100: color-mix(in srgb, #1e40af, white 95%);
+  --rrk-surface-200: color-mix(in srgb, #1e40af, white 85%);
+  --rrk-surface-300: color-mix(in srgb, #1e40af, white 75%);
+
+  --rrk-shadow-small: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --rrk-shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --rrk-shadow-large: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  --rrk-radius-small: 0.25rem;
+  --rrk-radius-medium: 0.5rem;
+  --rrk-radius-large: 0.75rem;
+}
+
+/* ========================================
+   TEMA 5: CREATIVO Y COLORIDO
+   ======================================== */
+[data-theme="creative"] {
+  --rrk-primary: #ec4899;
+  --rrk-primary-soft: color-mix(in srgb, #ec4899, white 40%);
+  --rrk-content: #1f2937;
+  --rrk-content-soft: color-mix(in srgb, #1f2937, white 30%);
+
+  --rrk-background: white;
+  --rrk-surface-100: color-mix(in srgb, #ec4899, white 95%);
+  --rrk-surface-200: color-mix(in srgb, #ec4899, white 85%);
+  --rrk-surface-300: color-mix(in srgb, #ec4899, white 75%);
+
+  --rrk-shadow-small: 0 2px 4px rgba(236, 72, 153, 0.1);
+  --rrk-shadow-medium: 0 8px 16px rgba(236, 72, 153, 0.15);
+  --rrk-shadow-large: 0 16px 32px rgba(236, 72, 153, 0.2);
+
+  --rrk-radius-small: 0.75rem;
+  --rrk-radius-medium: 1.25rem;
+  --rrk-radius-large: 2rem;
+}
+
+/* ========================================
+   PERSONALIZACIONES ESPECÍFICAS POR TEMA
+   ======================================== */
+
+/* Tema Minimalista - Header centrado */
+[data-theme="minimal"] .rrk-header {
+  text-align: center;
+  border-bottom: 2px solid var(--rrk-primary);
+  padding: 2rem 0;
+}
+
+[data-theme="minimal"] .rrk-name {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: -0.025em;
+}
+
+/* Tema Gradiente - Toolbar con gradiente */
+[data-theme="gradient"] .rrk-toolbar {
+  background: linear-gradient(
+    135deg,
+    var(--rrk-primary),
+    var(--rrk-primary-soft)
+  );
+  border: none;
+  color: white;
+}
+
+[data-theme="gradient"] .rrk-download-button,
+[data-theme="gradient"] .rrk-language-switcher {
+  color: white;
+}
+
+[data-theme="gradient"] .rrk-download-button:hover,
+[data-theme="gradient"] .rrk-language-switcher:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Tema Oscuro - Efectos de glassmorphism */
+[data-theme="dark-elegant"] .rrk-toolbar {
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark-elegant"] .rrk-language-switcher-buttons {
+  background: rgba(30, 41, 59, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Tema Corporativo - Diseño más formal */
+[data-theme="corporate"] .rrk-header {
+  border-bottom: 3px solid var(--rrk-primary);
+  padding: 1.5rem 0;
+}
+
+[data-theme="corporate"] .rrk-name {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--rrk-primary);
+}
+
+[data-theme="corporate"] .rrk-title {
+  font-size: 1.25rem;
+  color: var(--rrk-content-soft);
+  font-weight: 400;
+}
+
+/* Tema Creativo - Animaciones y efectos */
+[data-theme="creative"] .rrk-toolbar {
+  background: linear-gradient(
+    45deg,
+    var(--rrk-primary),
+    var(--rrk-primary-soft)
+  );
+  animation: gradientShift 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+[data-theme="creative"] .rrk-download-button:hover,
+[data-theme="creative"] .rrk-language-switcher:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(236, 72, 153, 0.3);
+}
+
+/* ========================================
+   EJEMPLOS DE USO
+   ======================================== */
+
+/* Para usar un tema, agrega el atributo data-theme al elemento raíz */
+/* 
+<html data-theme="minimal">
+<html data-theme="gradient">
+<html data-theme="dark-elegant">
+<html data-theme="corporate">
+<html data-theme="creative">
+*/
+
+/* También puedes cambiar el tema dinámicamente con JavaScript */
+/*
+document.documentElement.setAttribute('data-theme', 'dark-elegant');
+*/

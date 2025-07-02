@@ -34,7 +34,7 @@
 }
 
 .rrk-contact-button:hover {
-  background-color: var(--rrk-surface-100);
+  background-color: var(--rrk-surface-200);
 }
 
 @media print {
