@@ -1,88 +1,101 @@
-.resume-contact-socialButtons {
+/* Social Buttons */
+.rrk-contact-social-buttons {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
 @media print {
-  .resume-contact-socialButtons {
+  .rrk-contact-social-buttons {
     flex-direction: column;
     gap: 0.25rem;
     font-size: 0.75rem;
   }
 }
 
-.resume-contact-button {
+.rrk-contact-social-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.rrk-contact-button {
   height: 2.5rem;
   width: 2.5rem;
-  color: #0284c7;
+  color: var(--rrk-primary);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.375rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  border: 1px solid #99ddff;
+  border-radius: var(--rrk-radius-medium);
+  border: 1px solid var(--rrk-primary-soft);
   transition: color 0.2s, background-color 0.2s;
   cursor: pointer;
 }
 
-.resume-contact-button:hover {
-  background-color: #dff3fd;
+.rrk-contact-button:hover {
+  background-color: var(--rrk-surface-100);
 }
 
 @media print {
-  .resume-contact-button {
+  .rrk-contact-button {
     display: none;
   }
 }
 
-.resume-contact-bigIcon {
-  height: 1.25rem;
-  width: 1.25rem;
-}
-
-.resume-contact-url {
+.rrk-contact-url {
   display: none;
 }
 
 @media print {
-  .resume-contact-url {
-    display: flex;
-    align-items: center;
-    color: #0284c7;
+  .rrk-contact-url {
+    display: block;
+    color: var(--rrk-primary);
   }
 }
 
-.resume-contact-icon {
+/* Attribution */
+
+.rrk-contact-attribution {
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.rrk-contact-icon {
   margin-right: 0.25rem;
   margin-left: 0.25rem;
   height: 1rem;
   width: 1rem;
-  color: #0284c7;
-}
-
-.resume-contact-atribution {
-  font-size: 0.875rem;
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
+  color: var(--rrk-primary);
 }
 
 @media print {
-  .resume-contact-atribution {
+  .rrk-contact-attribution {
     padding-top: 0.25rem;
     font-size: 0.75rem;
   }
 }
 
-.resume-contact-atribution a {
+.rrk-contact-attribution a {
   display: flex;
   align-items: center;
 }
 
 @media print {
-  .resume-contact-github {
+  .rrk-contact-github {
     display: none;
+  }
+}
+
+.rrk-contact-repository-url {
+  display: none;
+}
+
+@media print {
+  .rrk-contact-repository-url {
+    display: block;
   }
 }

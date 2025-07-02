@@ -1,18 +1,30 @@
-import React from 'react'
-import {Download} from 'lucide-react'
-import './PdfDownloadButton.css'
+import React from "react";
+import "./PdfDownloadButton.css";
 
 export default function PdfDownloadButton() {
   const handlePrint = () => {
-    window.print()
-  }
+    window.print();
+  };
   return (
-    <button
-      onClick={handlePrint}
-      className="pdf-download-button"
-    >
-      <Download className="pdf-download-icon" />
+    <button onClick={handlePrint} className="pdf-download-button">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="pdf-download-icon"
+      >
+        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+        <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+        <path d="M12 18v-6" />
+        <path d="m9 15 3 3 3-3" />
+      </svg>
       Descargar Pdf
     </button>
-  )
+  );
 }

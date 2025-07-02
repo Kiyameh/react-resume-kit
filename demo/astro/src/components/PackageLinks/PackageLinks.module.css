@@ -6,8 +6,22 @@
   transition: transform 0.3s ease;
 }
 
+@media (max-width: 768px) {
+  .container {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media print {
+  .container {
+    display: none;
+  }
+}
+
 .container.collapsed {
-  transform: translateY(calc(100% - 2.5rem));
+  transform: translateY(calc(100% - 2rem));
 }
 
 /* Toggle button styles */
@@ -44,6 +58,42 @@
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
   border: 1px solid #e5e7eb;
   padding: 1rem;
+}
+
+/* Color switcher styles */
+.colorSwitcherContainer {
+  margin-bottom: 0.75rem;
+}
+
+.colorGrid {
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+}
+
+.colorButton {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.colorButton:hover {
+  transform: scale(1.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.colorButton.selected {
+  border-color: #374151;
+  box-shadow: 0 0 0 1px white, 0 0 0 2px #374151;
+}
+
+.colorButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px white, 0 0 0 2px #3b82f6;
 }
 
 .description {

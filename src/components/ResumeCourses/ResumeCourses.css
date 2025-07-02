@@ -1,4 +1,4 @@
-.resume-courses-course {
+.rrk-courses-course {
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
@@ -7,22 +7,22 @@
 }
 
 @media (min-width: 640px) {
-  .resume-courses-course {
+  .rrk-courses-course {
     flex-direction: row;
   }
 }
 
-.resume-courses-degree {
+.rrk-courses-degree {
   font-size: 1.125rem;
   font-weight: 500;
-  color: black;
+  color: var(--rrk-content);
 }
 
 @media print {
-  .resume-courses-degree {
+  .rrk-courses-degree {
     font-size: 1rem;
   }
-  .resume-courses-school {
+  .rrk-courses-school {
     font-size: 0.75rem;
   }
 }

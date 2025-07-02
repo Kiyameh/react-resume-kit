@@ -1,41 +1,42 @@
-.resume-about-card {
-  background-color: #f0f9ff;
-  border: 1px solid #bae6fd;
-  border-radius: 0.5rem;
+.rrk-about-card {
+  background-color: var(--rrk-surface-100);
+  border: 1px solid var(--rrk-border-primary);
+  border-radius: var(--rrk-radius-medium);
   padding: 1rem;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: var(--rrk-shadow-small);
   display: flex;
   gap: 0.75rem;
 }
 
 @media print {
-  .resume-about-card {
+  .rrk-about-card {
+    box-shadow: none;
     padding: 0.5rem;
     gap: 0.5rem;
   }
 }
 
-.resume-about-icon {
+.rrk-about-icon {
   height: 1.25rem;
   width: 1.25rem;
-  color: #0ea5e9;
+  color: var(--rrk-primary);
   margin-top: 0.125rem;
   flex-shrink: 0;
 }
 
 @media print {
-  .resume-about-icon {
+  .rrk-about-icon {
     height: 1rem;
     width: 1rem;
   }
 }
 
-.resume-about-text {
-  color: #6b7280;
+.rrk-about-text {
+  color: var(--rrk-content-soft);
 }
 
 @media print {
-  .resume-about-text {
+  .rrk-about-text {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }

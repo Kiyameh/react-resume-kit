@@ -32,7 +32,8 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && vite build",
+    "generate-dist-package": "node scripts/generate-dist-package.js",
+    "build": "npm run clean && vite build && npm run generate-dist-package",
     "npm:publish": "npm run build && npm publish --access public"
   },
   "engines": {
@@ -51,14 +52,10 @@
     "vite-plugin-lib-inject-css": "^2.2.2"
   },
   "dependencies": {
-    "@icons-pack/react-simple-icons": "^13.3.0",
-    "lucide-react": "^0.525.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
   "peerDependencies": {
-    "@icons-pack/react-simple-icons": "^13.3.0",
-    "lucide-react": "^0.525.0",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   }

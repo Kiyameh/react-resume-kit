@@ -1,46 +1,50 @@
-.resume-technologies-container {
+.rrk-technologies-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-.resume-technologies-chip {
+@media (max-width: 768px) {
+  .rrk-technologies-container {
+    gap: 0.3rem;
+  }
+}
+
+.rrk-technologies-chip {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   padding: 0.375rem 0.75rem;
-  background-color: #e0f2fe;
+  background-color: var(--rrk-surface-200);
   border-radius: 5rem;
-  transition-property: background-color;
-  transition-duration: 0.2s;
 }
 
-.resume-technologies-chip:hover {
-  background-color: #bae6fd;
+.rrk-technologies-chip:hover {
+  background-color: var(--rrk-surface-300);
 }
 
-.resume-technologies-icon {
+.rrk-technologies-icon {
   width: 1rem;
   height: 1rem;
-  color: #0ea5e9;
+  color: var(--rrk-primary);
 }
 
-.resume-technologies-text {
+.rrk-technologies-text {
   font-size: 0.875rem;
   font-weight: 500;
-  color: #0369a1;
+  color: var(--rrk-primary);
 }
 
 @media print {
-  .resume-technologies-chip {
+  .rrk-technologies-chip {
     padding: 0.25rem 0.5rem;
     font-size: 0.75rem;
   }
-  .resume-technologies-icon {
+  .rrk-technologies-icon {
     display: none;
   }
-  .resume-technologies-text {
+  .rrk-technologies-text {
     font-size: 0.75rem;
   }
 }

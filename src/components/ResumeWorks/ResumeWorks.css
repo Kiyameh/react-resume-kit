@@ -1,8 +1,8 @@
-.resume-works-work {
+.rrk-works-work {
   margin-bottom: 1.5rem;
 }
 
-.resume-works-workHeader {
+.rrk-works-workHeader {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   display: flex;
@@ -10,49 +10,49 @@
   justify-content: space-between;
 }
 
-.resume-works-leftHeader {
+.rrk-works-leftHeader {
   display: flex;
   flex-direction: column;
 }
 
-.resume-works-rightHeader {
+.rrk-works-rightHeader {
   display: flex;
   text-align: right;
   gap: 0.5rem;
 }
 
 @media (min-width: 640px) {
-  .resume-works-workHeader {
+  .rrk-works-workHeader {
     flex-direction: row;
   }
-  .resume-works-rightHeader {
+  .rrk-works-rightHeader {
     flex-direction: column;
   }
 }
 
-.resume-works-title {
+.rrk-works-title {
   font-size: 1.125rem;
   font-weight: 500;
-  color: black;
+  color: var(--rrk-content);
 }
 
-.resume-works-location {
+.rrk-works-location {
   font-size: 0.85rem;
 }
 
 @media print {
-  .resume-works-title {
+  .rrk-works-title {
     font-size: 1rem;
   }
-  .resume-works-company {
+  .rrk-works-company {
     font-size: 0.75rem;
   }
-  .resume-works-location {
+  .rrk-works-location {
     font-size: 0.75rem;
   }
 }
 
-.resume-works-points {
+.rrk-works-points {
   list-style-type: disc;
   padding-left: 1.25rem;
   margin-top: 0.25rem;
@@ -60,7 +60,7 @@
 }
 
 @media print {
-  .resume-works-points {
+  .rrk-works-points {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 0.75rem;

@@ -33,8 +33,6 @@ export default defineConfig({
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
-          'lucide-react': 'LucideReact',
-          '@icons-pack/react-simple-icons': 'ReactSimpleIcons',
         },
       },     
     },

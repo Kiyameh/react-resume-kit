@@ -1,0 +1,21 @@
+:root {
+  --rrk-primary: #1488c2;
+  --rrk-primary-soft: color-mix(in srgb, var(--rrk-primary), white 40%);
+  --rrk-content: #082f49;
+  --rrk-content-soft: color-mix(in srgb, var(--rrk-content), white 30%);
+
+  --rrk-background: white;
+  --rrk-surface-100: color-mix(in srgb, var(--rrk-primary), white 95%);
+  --rrk-surface-200: color-mix(in srgb, var(--rrk-primary), white 85%);
+  --rrk-surface-300: color-mix(in srgb, var(--rrk-primary), white 75%);
+
+  /* Radios */
+  --rrk-radius-small: 0.25rem;
+  --rrk-radius-medium: 0.5rem;
+  --rrk-radius-large: 1rem;
+
+  /* Shadows */
+  --rrk-shadow-small: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --rrk-shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --rrk-shadow-large: 0 10px 15px rgba(0, 0, 0, 0.1);
+}

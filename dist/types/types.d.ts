@@ -1,9 +1,4 @@
 import { ReactElement } from 'react';
-import * as LucideIcons from 'lucide-react';
-import * as SimpleIcons from '@icons-pack/react-simple-icons';
-export type LucideIconName = keyof typeof LucideIcons;
-export type SimpleIconName = keyof typeof SimpleIcons;
-export type IconName = SimpleIconName | LucideIconName;
 export declare const suportedLanguages: readonly ["en", "es"];
 export type Language = (typeof suportedLanguages)[number];
 export interface ResumeContent {
