@@ -22,4 +22,52 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+  
+  /* Evitar cortes de página en secciones principales */
+  section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  /* Evitar cortes en elementos de trabajo */
+  .rrk-works-work {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  /* Evitar cortes en proyectos */
+  .rrk-projects-card {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  /* Evitar cortes en habilidades */
+  .rrk-soft-skills-card {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  /* Evitar cortes en tecnologías */
+  .rrk-technologies-chip {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  /* Evitar cortes en cursos */
+  .rrk-courses-course {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  /* Evitar cortes en elementos de contacto */
+  .rrk-contact-social-item {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  /* Evitar cortes en elementos de about */
+  .rrk-about-card {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
 }

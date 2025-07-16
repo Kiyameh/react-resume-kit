@@ -34,17 +34,17 @@
 /* RESET CSS */
 
 /* Text Styles */
-a {
+.rrk-resume a {
   text-decoration: none;
   color: inherit;
 }
 
-a:hover {
+.rrk-resume a:hover {
   color: var(--rrk-primary);
 }
 
 /* Buttons */
-button {
+.rrk-resume button {
   background: none;
   border: none;
   padding: 0;
@@ -53,13 +53,13 @@ button {
 }
 
 /* Lists */
-ul,
-ol {
+.rrk-resume ul,
+.rrk-resume ol {
   list-style: none;
 }
 
 /* Sections an titles */
-h2 {
+.rrk-resume h2 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
@@ -69,19 +69,19 @@ h2 {
 }
 
 @media print {
-  h2 {
+  .rrk-resume h2 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
-section {
+.rrk-resume section {
   margin-top: 0.75rem;
   margin-bottom: 2.75rem;
 }
 
 @media print {
-  section {
+  .rrk-resume section {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
   }
